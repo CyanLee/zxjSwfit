@@ -1,0 +1,6 @@
+framework module Pods_zxjSwift {
+  umbrella header "Pods-zxjSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,21 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34503607223A44F400495854 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34503606223A44F400495854 /* MainTabBarViewController.swift */; };
+		3450360D223A463300495854 /* BaseViewControlle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3450360C223A463300495854 /* BaseViewControlle.swift */; };
+		3450360F223A474C00495854 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3450360E223A474C00495854 /* HomeViewController.swift */; };
+		34503611223A48DE00495854 /* MainNaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34503610223A48DE00495854 /* MainNaveViewController.swift */; };
+		3450361B223A5A4400495854 /* MakeMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3450361A223A5A4400495854 /* MakeMoneyViewController.swift */; };
+		3450361D223A5A5C00495854 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3450361C223A5A5C00495854 /* MineViewController.swift */; };
+		3450361F223A601A00495854 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3450361E223A601A00495854 /* HomeHeaderView.swift */; };
+		34503625223A6DC200495854 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34503624223A6DC200495854 /* Const.swift */; };
+		3450362A223A8E0900495854 /* HomeBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34503629223A8E0900495854 /* HomeBannerCell.swift */; };
 		349013FB223A3D5600958E69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349013FA223A3D5600958E69 /* AppDelegate.swift */; };
-		349013FD223A3D5600958E69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349013FC223A3D5600958E69 /* ViewController.swift */; };
-		34901400223A3D5600958E69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349013FE223A3D5600958E69 /* Main.storyboard */; };
 		34901402223A3D5700958E69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34901401223A3D5700958E69 /* Assets.xcassets */; };
 		34901405223A3D5700958E69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34901403223A3D5700958E69 /* LaunchScreen.storyboard */; };
+		B1962184052D22F002730F34 /* Pods_zxjSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F46DC4F90A81B85AE675BF9 /* Pods_zxjSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D59A05522C5E1B075A5F39B /* Pods-zxjSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zxjSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-zxjSwift/Pods-zxjSwift.release.xcconfig"; sourceTree = "<group>"; };
+		34503606223A44F400495854 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		3450360C223A463300495854 /* BaseViewControlle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControlle.swift; sourceTree = "<group>"; };
+		3450360E223A474C00495854 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		34503610223A48DE00495854 /* MainNaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNaveViewController.swift; sourceTree = "<group>"; };
+		3450361A223A5A4400495854 /* MakeMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeMoneyViewController.swift; sourceTree = "<group>"; };
+		3450361C223A5A5C00495854 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		3450361E223A601A00495854 /* HomeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		34503624223A6DC200495854 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		34503629223A8E0900495854 /* HomeBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerCell.swift; sourceTree = "<group>"; };
+		3450365D223A8FD600495854 /* Quizzler-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quizzler-Bridging-Header.h"; sourceTree = "<group>"; };
 		349013F7223A3D5600958E69 /* zxjSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zxjSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349013FA223A3D5600958E69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		349013FC223A3D5600958E69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		349013FF223A3D5600958E69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34901401223A3D5700958E69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34901404223A3D5700958E69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34901406223A3D5700958E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F46DC4F90A81B85AE675BF9 /* Pods_zxjSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zxjSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		985D20551EC0DFE75A5A4ED8 /* Pods-zxjSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zxjSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zxjSwift/Pods-zxjSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +48,144 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1962184052D22F002730F34 /* Pods_zxjSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34503601223A415F00495854 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34503602223A415F00495854 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34503603223A415F00495854 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				34503606223A44F400495854 /* MainTabBarViewController.swift */,
+				3450360C223A463300495854 /* BaseViewControlle.swift */,
+				34503610223A48DE00495854 /* MainNaveViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		34503608223A460400495854 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				34503609223A460400495854 /* Model */,
+				3450360A223A460400495854 /* View */,
+				3450360B223A460400495854 /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		34503609223A460400495854 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3450360A223A460400495854 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3450361E223A601A00495854 /* HomeHeaderView.swift */,
+				34503629223A8E0900495854 /* HomeBannerCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3450360B223A460400495854 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3450360E223A474C00495854 /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		34503612223A59CC00495854 /* MakeMoney */ = {
+			isa = PBXGroup;
+			children = (
+				34503613223A59CC00495854 /* Model */,
+				34503614223A59CC00495854 /* View */,
+				34503615223A59CC00495854 /* ViewController */,
+			);
+			name = MakeMoney;
+			path = zxjSwift/MakeMoney;
+			sourceTree = SOURCE_ROOT;
+		};
+		34503613223A59CC00495854 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34503614223A59CC00495854 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34503615223A59CC00495854 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3450361A223A5A4400495854 /* MakeMoneyViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		34503616223A59CC00495854 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				34503617223A59CC00495854 /* Model */,
+				34503618223A59CC00495854 /* View */,
+				34503619223A59CC00495854 /* ViewController */,
+			);
+			name = Mine;
+			path = zxjSwift/Mine;
+			sourceTree = SOURCE_ROOT;
+		};
+		34503617223A59CC00495854 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34503618223A59CC00495854 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34503619223A59CC00495854 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3450361C223A5A5C00495854 /* MineViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		349013EE223A3D5600958E69 = {
 			isa = PBXGroup;
 			children = (
 				349013F9223A3D5600958E69 /* zxjSwift */,
 				349013F8223A3D5600958E69 /* Products */,
+				96A0A87AB17CE01BCC492C78 /* Pods */,
+				92F228D637B212D4C9A682A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +201,76 @@
 			isa = PBXGroup;
 			children = (
 				349013FA223A3D5600958E69 /* AppDelegate.swift */,
-				349013FC223A3D5600958E69 /* ViewController.swift */,
-				349013FE223A3D5600958E69 /* Main.storyboard */,
+				34503612223A59CC00495854 /* MakeMoney */,
+				34503616223A59CC00495854 /* Mine */,
+				34503608223A460400495854 /* Home */,
+				3490140F223A3F4800958E69 /* Category */,
+				3490140D223A3F4800958E69 /* Main */,
+				3490140C223A3F4700958E69 /* Other */,
+				3490140E223A3F4800958E69 /* Third */,
+				34901410223A3F4800958E69 /* Tools */,
+			);
+			path = zxjSwift;
+			sourceTree = "<group>";
+		};
+		3490140C223A3F4700958E69 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				3450365D223A8FD600495854 /* Quizzler-Bridging-Header.h */,
 				34901401223A3D5700958E69 /* Assets.xcassets */,
 				34901403223A3D5700958E69 /* LaunchScreen.storyboard */,
 				34901406223A3D5700958E69 /* Info.plist */,
 			);
-			path = zxjSwift;
+			path = Other;
+			sourceTree = "<group>";
+		};
+		3490140D223A3F4800958E69 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				34503601223A415F00495854 /* Model */,
+				34503602223A415F00495854 /* View */,
+				34503603223A415F00495854 /* ViewController */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3490140E223A3F4800958E69 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		3490140F223A3F4800958E69 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		34901410223A3F4800958E69 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				34503624223A6DC200495854 /* Const.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		92F228D637B212D4C9A682A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F46DC4F90A81B85AE675BF9 /* Pods_zxjSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96A0A87AB17CE01BCC492C78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				985D20551EC0DFE75A5A4ED8 /* Pods-zxjSwift.debug.xcconfig */,
+				2D59A05522C5E1B075A5F39B /* Pods-zxjSwift.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +280,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34901409223A3D5700958E69 /* Build configuration list for PBXNativeTarget "zxjSwift" */;
 			buildPhases = (
+				C2E42DFA38E7096A5D706E11 /* [CP] Check Pods Manifest.lock */,
 				349013F3223A3D5600958E69 /* Sources */,
 				349013F4223A3D5600958E69 /* Frameworks */,
 				349013F5223A3D5600958E69 /* Resources */,
+				E5C4FF33A822143FD8817ACF /* [CP] Embed Pods Frameworks */,
+				89914E7467503305A12C46B6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,33 +336,96 @@
 			files = (
 				34901405223A3D5700958E69 /* LaunchScreen.storyboard in Resources */,
 				34901402223A3D5700958E69 /* Assets.xcassets in Resources */,
-				34901400223A3D5600958E69 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		89914E7467503305A12C46B6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zxjSwift/Pods-zxjSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2E42DFA38E7096A5D706E11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zxjSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5C4FF33A822143FD8817ACF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-zxjSwift/Pods-zxjSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDFullscreenPopGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zxjSwift/Pods-zxjSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		349013F3223A3D5600958E69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				349013FD223A3D5600958E69 /* ViewController.swift in Sources */,
+				3450360F223A474C00495854 /* HomeViewController.swift in Sources */,
+				34503607223A44F400495854 /* MainTabBarViewController.swift in Sources */,
+				3450361B223A5A4400495854 /* MakeMoneyViewController.swift in Sources */,
+				3450361F223A601A00495854 /* HomeHeaderView.swift in Sources */,
+				3450362A223A8E0900495854 /* HomeBannerCell.swift in Sources */,
+				3450361D223A5A5C00495854 /* MineViewController.swift in Sources */,
+				34503611223A48DE00495854 /* MainNaveViewController.swift in Sources */,
+				3450360D223A463300495854 /* BaseViewControlle.swift in Sources */,
 				349013FB223A3D5600958E69 /* AppDelegate.swift in Sources */,
+				34503625223A6DC200495854 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		349013FE223A3D5600958E69 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				349013FF223A3D5600958E69 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		34901403223A3D5700958E69 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,16 +555,20 @@
 		};
 		3490140A223A3D5700958E69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 985D20551EC0DFE75A5A4ED8 /* Pods-zxjSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = zxjSwift/Info.plist;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "$(SRCROOT)/zxjSwift/Other/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "---.zxjSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jinri/Desktop/zxjSwift/zxjSwift/Other/Quizzler-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,16 +576,20 @@
 		};
 		3490140B223A3D5700958E69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D59A05522C5E1B075A5F39B /* Pods-zxjSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = zxjSwift/Info.plist;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "$(SRCROOT)/zxjSwift/Other/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "---.zxjSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jinri/Desktop/zxjSwift/zxjSwift/Other/Quizzler-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
