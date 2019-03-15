@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class HomeBannerCell: UITableViewCell {
 
@@ -23,11 +24,29 @@ class HomeBannerCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        setupUI()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func setupUI() {
+        addSubview(bannerView)
+        bannerView.snp.makeConstraints { (make) in
+            make.top.equalTo(0)
+            make.left.equalTo(propW(width: 23))
+            make.right.equalTo(propW(width: -23))
+            make.bottom.equalTo(propH(height: -25))
+        }
+    }
+    
+    private lazy var bannerView: SDCycleScrollView = {
+        let bannerView = SDCycleScrollView.init(frame: .zero)
+        bannerView.localizationImageNamesGroup = ["home_banner_1","home_banner_2","home_banner_3"]
+        bannerView.pageDotImage = UIImage(named: "home_banner_nor")
+        bannerView.currentPageDotImage = UIImage(named: "home_banner_sel")
+        return bannerView
+    }()
 
 }

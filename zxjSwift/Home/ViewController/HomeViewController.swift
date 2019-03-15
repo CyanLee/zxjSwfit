@@ -46,12 +46,11 @@ class HomeViewController: BaseViewControlle,UITableViewDelegate,UITableViewDataS
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let tableCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        tableCell.backgroundColor = mainColor()
+        let tableCell = tableView.dequeueReusableCell(withIdentifier: "HomeBannerCell", for: indexPath) as! HomeBannerCell
         return tableCell
     }
     
@@ -78,7 +77,7 @@ class HomeViewController: BaseViewControlle,UITableViewDelegate,UITableViewDataS
         tableView.delegate = self
         tableView.dataSource = self
 //        tableView.register(UITableViewCell(), forCellReuseIdentifier: "cell")
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(HomeBannerCell.self, forCellReuseIdentifier: "HomeBannerCell")
         return tableView
     }()
     
