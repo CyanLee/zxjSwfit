@@ -13,12 +13,12 @@ class HomeViewController: BaseViewControlle,UITableViewDelegate,UITableViewDataS
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
     override func viewDidLoad() {
@@ -46,12 +46,20 @@ class HomeViewController: BaseViewControlle,UITableViewDelegate,UITableViewDataS
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let tableCell = tableView.dequeueReusableCell(withIdentifier: "HomeBannerCell", for: indexPath) as! HomeBannerCell
-        return tableCell
+        if indexPath.row == 0 {
+            let tableCell = tableView.dequeueReusableCell(withIdentifier: "HomeBannerCell", for: indexPath) as! HomeBannerCell
+            return tableCell
+        }else if indexPath.row == 1 {
+            let tableCell = tableView.dequeueReusableCell(withIdentifier: "HomeTitleBannerCell", for: indexPath) as! HomeTitleBannerCell
+            return tableCell
+        }else{
+            let tableCell = tableView.dequeueReusableCell(withIdentifier: "HomeStateCell", for: indexPath) as! HomeStateCell
+            return tableCell
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -76,8 +84,11 @@ class HomeViewController: BaseViewControlle,UITableViewDelegate,UITableViewDataS
         let tableView = UITableView(frame: .zero, style: .plain)
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.separatorStyle = .none
 //        tableView.register(UITableViewCell(), forCellReuseIdentifier: "cell")
         tableView.register(HomeBannerCell.self, forCellReuseIdentifier: "HomeBannerCell")
+        tableView.register(HomeTitleBannerCell.self, forCellReuseIdentifier: "HomeTitleBannerCell")
+        tableView.register(HomeStateCell.self, forCellReuseIdentifier: "HomeStateCell")
         return tableView
     }()
     

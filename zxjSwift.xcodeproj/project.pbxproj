@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340CE28B223BEA8F003E8880 /* HomeStateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340CE28A223BEA8F003E8880 /* HomeStateCell.swift */; };
+		340CE28D223BFBF1003E8880 /* MineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340CE28C223BFBF1003E8880 /* MineHeaderView.swift */; };
+		340CE2B3223C93B3003E8880 /* UILabel+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340CE2B2223C93B3003E8880 /* UILabel+extension.swift */; };
+		340CE2B5223C95BC003E8880 /* UIButton+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340CE2B4223C95BC003E8880 /* UIButton+extension.swift */; };
+		340CE2B7223C9669003E8880 /* UIImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340CE2B6223C9669003E8880 /* UIImageView+extension.swift */; };
+		340CE2B9223C96C0003E8880 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340CE2B8223C96C0003E8880 /* UIView+extension.swift */; };
+		340CE2BB223C9793003E8880 /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340CE2BA223C9793003E8880 /* UITableView+extension.swift */; };
+		340CE2BD223C980B003E8880 /* UICollectionView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340CE2BC223C980A003E8880 /* UICollectionView+extension.swift */; };
+		340CE2BF223CA209003E8880 /* MineContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340CE2BE223CA209003E8880 /* MineContentView.swift */; };
 		34503607223A44F400495854 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34503606223A44F400495854 /* MainTabBarViewController.swift */; };
 		3450360D223A463300495854 /* BaseViewControlle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3450360C223A463300495854 /* BaseViewControlle.swift */; };
 		3450360F223A474C00495854 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3450360E223A474C00495854 /* HomeViewController.swift */; };
@@ -40,11 +49,21 @@
 		349013FB223A3D5600958E69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349013FA223A3D5600958E69 /* AppDelegate.swift */; };
 		34901402223A3D5700958E69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34901401223A3D5700958E69 /* Assets.xcassets */; };
 		34901405223A3D5700958E69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34901403223A3D5700958E69 /* LaunchScreen.storyboard */; };
+		34D38FB8223BB427007DCAC0 /* HomeTitleBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D38FB7223BB427007DCAC0 /* HomeTitleBannerCell.swift */; };
 		B1962184052D22F002730F34 /* Pods_zxjSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F46DC4F90A81B85AE675BF9 /* Pods_zxjSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D59A05522C5E1B075A5F39B /* Pods-zxjSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zxjSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-zxjSwift/Pods-zxjSwift.release.xcconfig"; sourceTree = "<group>"; };
+		340CE28A223BEA8F003E8880 /* HomeStateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStateCell.swift; sourceTree = "<group>"; };
+		340CE28C223BFBF1003E8880 /* MineHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineHeaderView.swift; sourceTree = "<group>"; };
+		340CE2B2223C93B3003E8880 /* UILabel+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+extension.swift"; sourceTree = "<group>"; };
+		340CE2B4223C95BC003E8880 /* UIButton+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+extension.swift"; sourceTree = "<group>"; };
+		340CE2B6223C9669003E8880 /* UIImageView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension.swift"; sourceTree = "<group>"; };
+		340CE2B8223C96C0003E8880 /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
+		340CE2BA223C9793003E8880 /* UITableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
+		340CE2BC223C980A003E8880 /* UICollectionView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+extension.swift"; sourceTree = "<group>"; };
+		340CE2BE223CA209003E8880 /* MineContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineContentView.swift; sourceTree = "<group>"; };
 		34503606223A44F400495854 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		3450360C223A463300495854 /* BaseViewControlle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControlle.swift; sourceTree = "<group>"; };
 		3450360E223A474C00495854 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +122,7 @@
 		34901401223A3D5700958E69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34901404223A3D5700958E69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34901406223A3D5700958E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34D38FB7223BB427007DCAC0 /* HomeTitleBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTitleBannerCell.swift; sourceTree = "<group>"; };
 		3F46DC4F90A81B85AE675BF9 /* Pods_zxjSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zxjSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		985D20551EC0DFE75A5A4ED8 /* Pods-zxjSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zxjSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zxjSwift/Pods-zxjSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,6 +185,8 @@
 			children = (
 				3450361E223A601A00495854 /* HomeHeaderView.swift */,
 				34503629223A8E0900495854 /* HomeBannerCell.swift */,
+				34D38FB7223BB427007DCAC0 /* HomeTitleBannerCell.swift */,
+				340CE28A223BEA8F003E8880 /* HomeStateCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -231,6 +253,8 @@
 		34503618223A59CC00495854 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				340CE28C223BFBF1003E8880 /* MineHeaderView.swift */,
+				340CE2BE223CA209003E8880 /* MineContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -375,6 +399,12 @@
 		3490140F223A3F4800958E69 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				340CE2B4223C95BC003E8880 /* UIButton+extension.swift */,
+				340CE2B6223C9669003E8880 /* UIImageView+extension.swift */,
+				340CE2B8223C96C0003E8880 /* UIView+extension.swift */,
+				340CE2BA223C9793003E8880 /* UITableView+extension.swift */,
+				340CE2BC223C980A003E8880 /* UICollectionView+extension.swift */,
+				340CE2B2223C93B3003E8880 /* UILabel+extension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -543,7 +573,9 @@
 			files = (
 				345036AE223A95DE00495854 /* UIImage+GIF.m in Sources */,
 				345036B0223A95DE00495854 /* SDWebImageCompat.m in Sources */,
+				340CE28B223BEA8F003E8880 /* HomeStateCell.swift in Sources */,
 				3450360F223A474C00495854 /* HomeViewController.swift in Sources */,
+				340CE2B5223C95BC003E8880 /* UIButton+extension.swift in Sources */,
 				34503688223A950600495854 /* TADotView.m in Sources */,
 				34503689223A950600495854 /* TAPageControl.m in Sources */,
 				345036AA223A95DE00495854 /* SDWebImageManager.m in Sources */,
@@ -555,19 +587,27 @@
 				3450368B223A950600495854 /* TAAbstractDotView.m in Sources */,
 				345036B7223A95DE00495854 /* UIButton+WebCache.m in Sources */,
 				3450368A223A950600495854 /* TAAnimatedDotView.m in Sources */,
+				340CE2BF223CA209003E8880 /* MineContentView.swift in Sources */,
 				34503687223A950600495854 /* SDCollectionViewCell.m in Sources */,
 				345036AF223A95DE00495854 /* UIImage+MultiFormat.m in Sources */,
+				340CE2B9223C96C0003E8880 /* UIView+extension.swift in Sources */,
 				345036B3223A95DE00495854 /* SDWebImageDownloaderOperation.m in Sources */,
 				345036AB223A95DE00495854 /* SDWebImageDecoder.m in Sources */,
 				345036B1223A95DE00495854 /* SDWebImagePrefetcher.m in Sources */,
+				340CE2B3223C93B3003E8880 /* UILabel+extension.swift in Sources */,
 				345036B4223A95DE00495854 /* NSData+ImageContentType.m in Sources */,
+				340CE2BD223C980B003E8880 /* UICollectionView+extension.swift in Sources */,
 				34503611223A48DE00495854 /* MainNaveViewController.swift in Sources */,
+				34D38FB8223BB427007DCAC0 /* HomeTitleBannerCell.swift in Sources */,
 				34503686223A950600495854 /* UIView+SDExtension.m in Sources */,
 				34503685223A950600495854 /* SDCycleScrollView.m in Sources */,
 				345036B6223A95DE00495854 /* UIView+WebCacheOperation.m in Sources */,
 				3450360D223A463300495854 /* BaseViewControlle.swift in Sources */,
 				349013FB223A3D5600958E69 /* AppDelegate.swift in Sources */,
+				340CE28D223BFBF1003E8880 /* MineHeaderView.swift in Sources */,
+				340CE2B7223C9669003E8880 /* UIImageView+extension.swift in Sources */,
 				345036AC223A95DE00495854 /* UIImageView+HighlightedWebCache.m in Sources */,
+				340CE2BB223C9793003E8880 /* UITableView+extension.swift in Sources */,
 				345036B2223A95DE00495854 /* SDImageCache.m in Sources */,
 				345036B5223A95DE00495854 /* UIImageView+WebCache.m in Sources */,
 				345036AD223A95DE00495854 /* SDWebImageDownloader.m in Sources */,

@@ -32,6 +32,7 @@ class HomeBannerCell: UITableViewCell {
     }
     
     func setupUI() {
+        selectionStyle = .none
         addSubview(bannerView)
         bannerView.snp.makeConstraints { (make) in
             make.top.equalTo(0)
@@ -41,6 +42,8 @@ class HomeBannerCell: UITableViewCell {
         }
     }
     
+    
+    /// 轮播
     private lazy var bannerView: SDCycleScrollView = {
         let bannerView = SDCycleScrollView.init(frame: .zero)
         bannerView.localizationImageNamesGroup = ["home_banner_1","home_banner_2","home_banner_3"]
