@@ -10,6 +10,9 @@ import UIKit
 
 class MineContentView: UIView,UICollectionViewDelegate,UICollectionViewDataSource {
     
+    var iconArray = [NSString](arrayLiteral: "mine_prove","mine_money","mine_bill","mine_bank_card","mine_change_phone","mine_help","mine_passwork","mine_updata")
+    var titleArry = [NSString](arrayLiteral: "我的认证","我的资金","我的账单","银行卡","修改号码","帮助中心","设置密码","版本更新")
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
@@ -17,6 +20,10 @@ class MineContentView: UIView,UICollectionViewDelegate,UICollectionViewDataSourc
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setinitup() {
+        
     }
     
     func setupUI() {
@@ -32,8 +39,10 @@ class MineContentView: UIView,UICollectionViewDelegate,UICollectionViewDataSourc
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = UIColor.red
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MineContentViewCell", for: indexPath) as! MineContentViewCell
+        cell.iconImgArray = iconArray as [String]
+        cell.titleArray = titleArry as [String]
+        cell.index = indexPath.row
         return cell
     }
     
@@ -41,8 +50,8 @@ class MineContentView: UIView,UICollectionViewDelegate,UICollectionViewDataSourc
     /// 类别
     private lazy var collectionView: UICollectionView = {
         var w = SW / 3
-        let collectionView = UICollectionView(frame: .zero, delegate: self, setScrollDirection: UICollectionView.ScrollDirection.vertical, itemSize: CGSize(width: w, height: w), minimumInteritemSpacing: 0, minimumLineSpacing: 0, layoutSectionInset: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        let collectionView = UICollectionView(frame: .zero, delegate: self, setScrollDirection: UICollectionView.ScrollDirection.vertical, itemSize: CGSize(width: w, height: propH(height: 100)), minimumInteritemSpacing: 0, minimumLineSpacing: 0, layoutSectionInset: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
+        collectionView.register(MineContentViewCell.self, forCellWithReuseIdentifier: "MineContentViewCell")
         return collectionView
     }()
 

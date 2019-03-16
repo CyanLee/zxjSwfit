@@ -16,6 +16,8 @@
 		340CE2BB223C9793003E8880 /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340CE2BA223C9793003E8880 /* UITableView+extension.swift */; };
 		340CE2BD223C980B003E8880 /* UICollectionView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340CE2BC223C980A003E8880 /* UICollectionView+extension.swift */; };
 		340CE2BF223CA209003E8880 /* MineContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340CE2BE223CA209003E8880 /* MineContentView.swift */; };
+		340CE2C1223CAA26003E8880 /* MineContentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340CE2C0223CAA26003E8880 /* MineContentViewCell.swift */; };
+		340CE2C3223CCA4B003E8880 /* HomeActivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340CE2C2223CCA4B003E8880 /* HomeActivationViewController.swift */; };
 		34503607223A44F400495854 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34503606223A44F400495854 /* MainTabBarViewController.swift */; };
 		3450360D223A463300495854 /* BaseViewControlle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3450360C223A463300495854 /* BaseViewControlle.swift */; };
 		3450360F223A474C00495854 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3450360E223A474C00495854 /* HomeViewController.swift */; };
@@ -64,6 +66,8 @@
 		340CE2BA223C9793003E8880 /* UITableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
 		340CE2BC223C980A003E8880 /* UICollectionView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+extension.swift"; sourceTree = "<group>"; };
 		340CE2BE223CA209003E8880 /* MineContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineContentView.swift; sourceTree = "<group>"; };
+		340CE2C0223CAA26003E8880 /* MineContentViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineContentViewCell.swift; sourceTree = "<group>"; };
+		340CE2C2223CCA4B003E8880 /* HomeActivationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeActivationViewController.swift; sourceTree = "<group>"; };
 		34503606223A44F400495854 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		3450360C223A463300495854 /* BaseViewControlle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControlle.swift; sourceTree = "<group>"; };
 		3450360E223A474C00495854 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -195,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				3450360E223A474C00495854 /* HomeViewController.swift */,
+				340CE2C2223CCA4B003E8880 /* HomeActivationViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -255,6 +260,7 @@
 			children = (
 				340CE28C223BFBF1003E8880 /* MineHeaderView.swift */,
 				340CE2BE223CA209003E8880 /* MineContentView.swift */,
+				340CE2C0223CAA26003E8880 /* MineContentViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -590,6 +596,8 @@
 				340CE2BF223CA209003E8880 /* MineContentView.swift in Sources */,
 				34503687223A950600495854 /* SDCollectionViewCell.m in Sources */,
 				345036AF223A95DE00495854 /* UIImage+MultiFormat.m in Sources */,
+				340CE2C1223CAA26003E8880 /* MineContentViewCell.swift in Sources */,
+				340CE2C3223CCA4B003E8880 /* HomeActivationViewController.swift in Sources */,
 				340CE2B9223C96C0003E8880 /* UIView+extension.swift in Sources */,
 				345036B3223A95DE00495854 /* SDWebImageDownloaderOperation.m in Sources */,
 				345036AB223A95DE00495854 /* SDWebImageDecoder.m in Sources */,

@@ -85,6 +85,8 @@ class HomeViewController: BaseViewControlle,UITableViewDelegate,UITableViewDataS
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
+        tableView.showsVerticalScrollIndicator = false
+        tableView.showsHorizontalScrollIndicator = false
 //        tableView.register(UITableViewCell(), forCellReuseIdentifier: "cell")
         tableView.register(HomeBannerCell.self, forCellReuseIdentifier: "HomeBannerCell")
         tableView.register(HomeTitleBannerCell.self, forCellReuseIdentifier: "HomeTitleBannerCell")

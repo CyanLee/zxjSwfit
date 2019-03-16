@@ -16,9 +16,9 @@ extension UIView {
     ///   - frame: 位置
     ///   - bgColor: 背景颜色
     /// - Returns: view    
-    convenience init(frame: CGRect, bgColor: UIColor) {
+    convenience init(frame: CGRect, bgColor: Int) {
         self.init()
         self.frame = frame
-        self.backgroundColor = bgColor
+        self.backgroundColor = kRGBColorFromHex(rgbValue: bgColor)
     }
 }

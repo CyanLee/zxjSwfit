@@ -33,7 +33,7 @@ class MineViewController: BaseViewControlle {
             make.top.equalTo(0)
             make.left.equalTo(0)
             make.right.equalTo(0)
-            make.height.equalTo(propH(height: 229))
+            make.height.equalTo(propH(height: 210))
         }
         contentView.snp.makeConstraints { (make) in
             make.top.equalTo(headerView.snp.bottom).offset(0)

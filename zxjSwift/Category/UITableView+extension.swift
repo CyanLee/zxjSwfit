@@ -23,6 +23,8 @@ extension UITableView {
         self.delegate = delegate as? UITableViewDelegate
         self.dataSource = delegate as? UITableViewDataSource
         self.separatorStyle = UITableViewCell.SeparatorStyle(rawValue: Int(separatorStyle))!
+        self.showsVerticalScrollIndicator = false
+        self.showsHorizontalScrollIndicator = false
         self.tableFooterView = UIView()
     }
 }

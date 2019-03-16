@@ -21,11 +21,11 @@ extension UIButton {
     ///   - target: 目标
     ///   - sle: 想要方法
     /// - Returns: UIButton
-    convenience init(title: String, fontSize: CGFloat, titleColor: UIColor, cornerRadius: CGFloat, imageName: String, frame: CGRect, target: Any?, sle: Selector) {
+    convenience init(title: String, fontSize: CGFloat, titleColor: Int, cornerRadius: CGFloat, imageName: String, frame: CGRect, target: Any?, sle: Selector) {
         self.init(type: .custom)
         self.frame = frame
         self.setTitle(title, for: .normal)
-        self.setTitleColor(titleColor, for: .normal)
+        self.setTitleColor(kRGBColorFromHex(rgbValue: titleColor), for: .normal)
         if cornerRadius > 0 {
             self.clipsToBounds = true
             self.layer.cornerRadius = cornerRadius

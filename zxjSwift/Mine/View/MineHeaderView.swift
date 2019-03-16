@@ -66,11 +66,6 @@ class MineHeaderView: UIView {
     }
     
     
-    /// 设置
-    @objc func setupClick() {
-        
-    }
-    
     /// 迷你icon
     private lazy var miniIconImgV: UIImageView = {
         let miniIconImgV = UIImageView()
@@ -93,7 +88,7 @@ class MineHeaderView: UIView {
     private lazy var setupBtn: UIButton = {
         let setupBtn = UIButton(type: .custom)
         setupBtn.setImage(UIImage(named: "mine_setup"), for: .normal)
-        setupBtn.addTarget(setupBtn, action: #selector(setupClick), for: .touchUpInside)
+        setupBtn.addTarget(self, action: #selector(setupClick), for: .touchUpInside)
         return setupBtn
     }()
     
@@ -147,5 +142,9 @@ class MineHeaderView: UIView {
         return serviceLB
     }()
     
+    /// 设置
+    @objc func setupClick() {
+        print("设置")
+    }
     
 }

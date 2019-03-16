@@ -18,10 +18,10 @@ extension UILabel {
     ///   - fontSize: 字体大小
     ///   - frame: 位置
     /// - Returns: UILabel    
-    convenience init(title: String, textColor: UIColor, font: UIFont, frame: CGRect) {
+    convenience init(title: String, textColor: Int, font: UIFont, frame: CGRect) {
         self.init()
         self.text = title
-        self.textColor = textColor
+        self.textColor = kRGBColorFromHex(rgbValue: textColor)
         self.font = font
         self.frame = frame
     }
