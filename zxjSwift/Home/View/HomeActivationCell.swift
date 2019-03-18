@@ -12,6 +12,7 @@ class HomeActivationCell: UITableViewCell,UITextFieldDelegate {
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        selectionStyle = .none
         setupUI()
     }
     
@@ -35,6 +36,16 @@ class HomeActivationCell: UITableViewCell,UITextFieldDelegate {
         addSubview(backBtn)
         addSubview(titleView)
         addSubview(titleLB)
+        addSubview(baseView_1)
+        baseView_1.addSubview(instructionsLB_1)
+        baseView_1.addSubview(emailTF)
+        baseView_1.addSubview(baseViewLine_1)
+        addSubview(baseView_2)
+        baseView_2.addSubview(instructionsLB_2)
+        baseView_2.addSubview(codeTF)
+        baseView_2.addSubview(codeLineView)
+        baseView_2.addSubview(codeBtn)
+        baseView_2.addSubview(baseViewLine_2)
         backBtn.snp.makeConstraints { (make) in
             make.top.equalTo(propH(height: 31))
             make.left.equalTo(propW(width: 10))
@@ -50,6 +61,62 @@ class HomeActivationCell: UITableViewCell,UITextFieldDelegate {
             make.left.equalTo(propW(width: propW(width: 24)))
             make.height.equalTo(propH(height: 29))
         }
+        baseView_1.snp.makeConstraints { (make) in
+            make.top.equalTo(titleView.snp.bottom).offset(propH(height: 19))
+            make.left.equalTo(0)
+            make.right.equalTo(0)
+            make.height.equalTo(propH(height: 68))
+        }
+        instructionsLB_1.snp.makeConstraints { (make) in
+            make.left.equalTo(propW(width: 35))
+            make.centerY.equalTo(baseView_1)
+        }
+        emailTF.snp.makeConstraints { (make) in
+            make.left.equalTo(propW(width: 99))
+            make.top.equalTo(0)
+            make.bottom.equalTo(0)
+            make.right.equalTo(0)
+        }
+        baseViewLine_1.snp.makeConstraints { (make) in
+            make.left.equalTo(propW(width: 25))
+            make.right.equalTo(propW(width: -25))
+            make.bottom.equalTo(0)
+            make.height.equalTo(propH(height: 1))
+        }
+        baseView_2.snp.makeConstraints { (make) in
+            make.top.equalTo(baseView_1.snp.bottom).offset(0)
+            make.left.equalTo(0)
+            make.right.equalTo(0)
+            make.height.equalTo(propH(height: 68))
+        }
+        instructionsLB_2.snp.makeConstraints { (make) in
+            make.left.equalTo(propW(width: 35))
+            make.centerY.equalTo(baseView_2)
+        }
+        codeBtn.snp.makeConstraints { (make) in
+            make.top.equalTo(0)
+            make.bottom.equalTo(0)
+            make.right.equalTo(propW(width: -25))
+            make.width.equalTo(propW(width: 117))
+        }
+        codeLineView.snp.makeConstraints { (make) in
+            make.size.equalTo(CGSize(width: propW(width: 1), height: propH(height: 25)))
+            make.right.equalTo(codeBtn.snp.left).offset(0)
+            make.centerY.equalTo(baseView_2)
+        }
+        codeTF.snp.makeConstraints { (make) in
+            make.left.equalTo(propW(width: 99))
+            make.top.equalTo(0)
+            make.bottom.equalTo(0)
+            make.right.equalTo(codeLineView.snp.left).offset(0)
+        }
+        baseViewLine_2.snp.makeConstraints { (make) in
+            make.left.equalTo(propW(width: 25))
+            make.right.equalTo(propW(width: -25))
+            make.bottom.equalTo(0)
+            make.height.equalTo(propH(height: 1))
+        }
+        
     }
     
     //关闭

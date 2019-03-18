@@ -12,6 +12,7 @@ class HomeStateCell: UITableViewCell {
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        selectionStyle = .none
         setupUI()
     }
     
@@ -31,7 +32,6 @@ class HomeStateCell: UITableViewCell {
     }
     
     func setupUI() {
-        selectionStyle = .none
         addSubview(topTitleLB)
         addSubview(moneyLB)
         addSubview(middleTitleLB)
@@ -68,7 +68,11 @@ class HomeStateCell: UITableViewCell {
     
     /// 点击事件
     @objc func actionClick() {
-        self.viewController()?.navigationController?.pushViewController(HomeActivationViewController(), animated: true)
+        if #available(iOS 11.0, *) {
+            self.viewController()?.navigationController?.pushViewController(HomeActivationViewController(), animated: true)
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     /// 最高可借(元)

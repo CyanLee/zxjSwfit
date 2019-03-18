@@ -8,7 +8,6 @@
 
 import UIKit
 
-@available(iOS 11.0, *)
 class HomeActivationViewController: BaseViewControlle,UITableViewDelegate,UITableViewDataSource {
 
     override func viewWillAppear(_ animated: Bool) {
@@ -51,7 +50,9 @@ class HomeActivationViewController: BaseViewControlle,UITableViewDelegate,UITabl
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain, separatorStyle: 0, delegate: self)
         tableView.register(HomeActivationCell.self, forCellReuseIdentifier: "HomeActivationCell")
-        tableView.contentInsetAdjustmentBehavior = .never
+        if #available(iOS 11.0, *) {
+            tableView.contentInsetAdjustmentBehavior = .never
+        }
         return tableView
     }()
 

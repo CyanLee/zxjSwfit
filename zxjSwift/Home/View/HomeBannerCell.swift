@@ -24,6 +24,7 @@ class HomeBannerCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        selectionStyle = .none
         setupUI()
     }
     
@@ -32,7 +33,6 @@ class HomeBannerCell: UITableViewCell {
     }
     
     func setupUI() {
-        selectionStyle = .none
         addSubview(bannerView)
         bannerView.snp.makeConstraints { (make) in
             make.top.equalTo(0)

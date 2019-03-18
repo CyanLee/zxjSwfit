@@ -12,6 +12,7 @@ class HomeTitleBannerCell: UITableViewCell {
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        selectionStyle = .none
         setupUI()
     }
     
@@ -31,7 +32,6 @@ class HomeTitleBannerCell: UITableViewCell {
     }
 
     func setupUI() {
-        selectionStyle = .none
         backgroundColor = kRGBColorFromHex(rgbValue: 0xF5F6FA)
         addSubview(baseView)
         baseView.addSubview(horn)
