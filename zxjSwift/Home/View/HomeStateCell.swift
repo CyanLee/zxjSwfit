@@ -68,7 +68,7 @@ class HomeStateCell: UITableViewCell {
     
     /// 点击事件
     @objc func actionClick() {
-        
+        self.viewController()?.navigationController?.pushViewController(HomeActivationViewController(), animated: true)
     }
     
     /// 最高可借(元)

@@ -8,8 +8,19 @@
 
 import UIKit
 
+@available(iOS 11.0, *)
 class HomeActivationViewController: BaseViewControlle,UITableViewDelegate,UITableViewDataSource {
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -28,13 +39,19 @@ class HomeActivationViewController: BaseViewControlle,UITableViewDelegate,UITabl
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeActivationCell", for: indexPath) as! HomeActivationCell
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return propH(height: 667)
+    }
+    
+    
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain, separatorStyle: 0, delegate: self)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(HomeActivationCell.self, forCellReuseIdentifier: "HomeActivationCell")
+        tableView.contentInsetAdjustmentBehavior = .never
         return tableView
     }()
 

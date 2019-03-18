@@ -21,4 +21,21 @@ extension UIView {
         self.frame = frame
         self.backgroundColor = kRGBColorFromHex(rgbValue: bgColor)
     }
+    
+    func viewController()->UIViewController? {
+
+        var nextResponder: UIResponder? = self
+
+        repeat {
+            nextResponder = nextResponder?.next
+
+            if let viewController = nextResponder as? UIViewController {
+                return viewController
+            }
+
+        } while nextResponder != nil
+
+        return nil
+    }
+    
 }
