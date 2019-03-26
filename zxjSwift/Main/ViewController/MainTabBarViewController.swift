@@ -30,7 +30,7 @@ class MainTabBarViewController: UITabBarController {
     func setUpOneChildViewController(viewController: UIViewController, image: UIImage, selectedImage: UIImage, title: NSString) {
         let navVC = MainNaveViewController.init(rootViewController: viewController)
         navVC.tabBarItem = UITabBarItem.init(title: title as String, image: image, selectedImage: selectedImage)
-        self.addChild(navVC)
+        self.addChildViewController(navVC)
     }
 
 }

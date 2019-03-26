@@ -46,6 +46,11 @@ class HomeActivationCell: UITableViewCell,UITextFieldDelegate {
         baseView_2.addSubview(codeLineView)
         baseView_2.addSubview(codeBtn)
         baseView_2.addSubview(baseViewLine_2)
+        addSubview(emailFormatLB)
+        addSubview(actionBtn)
+        addSubview(descBgView)
+        addSubview(descLB)
+        
         backBtn.snp.makeConstraints { (make) in
             make.top.equalTo(propH(height: 31))
             make.left.equalTo(propW(width: 10))
@@ -97,7 +102,7 @@ class HomeActivationCell: UITableViewCell,UITextFieldDelegate {
             make.top.equalTo(0)
             make.bottom.equalTo(0)
             make.right.equalTo(propW(width: -25))
-            make.width.equalTo(propW(width: 117))
+            make.width.equalTo(propW(width: 100))
         }
         codeLineView.snp.makeConstraints { (make) in
             make.size.equalTo(CGSize(width: propW(width: 1), height: propH(height: 25)))
@@ -116,6 +121,28 @@ class HomeActivationCell: UITableViewCell,UITextFieldDelegate {
             make.bottom.equalTo(0)
             make.height.equalTo(propH(height: 1))
         }
+        emailFormatLB.snp.makeConstraints { (make) in
+            make.top.equalTo(baseView_2.snp.bottom).offset(propH(height: 20))
+            make.left.equalTo(propW(width: 26))
+            make.height.equalTo(propH(height: 12))
+        }
+        actionBtn.snp.makeConstraints { (make) in
+            make.top.equalTo(emailFormatLB.snp.bottom).offset(propH(height: 50))
+            make.size.equalTo(CGSize(width: propW(width: 312), height: propH(height: 46)))
+            make.centerX.equalTo(self)
+        }
+        descBgView.snp.makeConstraints { (make) in
+            make.top.equalTo(actionBtn.snp.bottom).offset(propH(height: 54))
+            make.left.equalTo(propW(width: 35))
+            make.right.equalTo(propW(width: -26))
+            make.height.equalTo(propH(height: 110))
+        }
+        descLB.snp.makeConstraints { (make) in
+            make.top.equalTo(actionBtn.snp.bottom).offset(propH(height: 47))
+            make.left.equalTo(propW(width: 26))
+            make.right.equalTo(propW(width: -31))
+            make.height.equalTo(propH(height: 121))
+        }
         
     }
     
@@ -126,6 +153,12 @@ class HomeActivationCell: UITableViewCell,UITextFieldDelegate {
     
     /// 验证码
     @objc func codeClick() {
+        
+    }
+    
+    
+    /// 立即验证
+    @objc func actionClick() {
         
     }
     
@@ -222,6 +255,43 @@ class HomeActivationCell: UITableViewCell,UITextFieldDelegate {
     private lazy var baseViewLine_2: UIView = {
         let baseViewLine_2 = UIView(frame: .zero, bgColor: 0xEBEBEB)
         return baseViewLine_2
+    }()
+    
+    
+    /// 邮箱格式错误提示
+    private lazy var emailFormatLB: UILabel = {
+        let emailFormatLB = UILabel(title: "邮箱格式不正确，请重新输入", textColor: 0xFF6146, font: UIFont.systemFont(ofSize: 12), frame: .zero)
+        return emailFormatLB
+    }()
+    
+    
+    /// 立即验证
+    private lazy var actionBtn: UIButton = {
+        let actionBtn = UIButton(title: "立即激活", font: UIFont.boldSystemFont(ofSize: 18), titleColor: 0xFFDD01, cornerRadius: propH(height: 23), imageName: "", frame: .zero, target: self, sle: #selector(actionClick))
+        actionBtn.backgroundColor = kRGBColorFromHex(rgbValue: 0x333333)
+        return actionBtn
+    }()
+    
+    
+    /// 提示语
+    private lazy var descLB: UILabel = {
+        let descLB = UILabel(title: "1、当您认证邮箱后，知心借会将您的借款合同以电子合同的形式发送到您的邮箱，届时请注意查收；\n2、只有成功认证邮箱后，您才能激活账户进行申请借款喔", textColor: 0x999999, font: UIFont.systemFont(ofSize: 13), frame: .zero)
+        descLB.numberOfLines = 0
+        let paragraphStye = NSMutableParagraphStyle()
+        //调整行间距
+        paragraphStye.lineSpacing = 10.0
+        paragraphStye.lineBreakMode = NSLineBreakMode.byWordWrapping
+        let attributedString = NSMutableAttributedString.init(string: descLB.text!, attributes: [NSAttributedStringKey.paragraphStyle:paragraphStye])
+        descLB.attributedText = attributedString
+        return descLB
+    }()
+    
+    
+    /// 提示语的背景
+    private lazy var descBgView: UIView = {
+        let descBgView = UIView(frame: .zero, bgColor: 0x000000)
+        descBgView.backgroundColor = UIColor(red: 255/255.0, green: 221/255.0, blue: 1/255.0, alpha: 0.1)
+        return descBgView
     }()
     
 }

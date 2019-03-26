@@ -69,7 +69,8 @@ class HomeStateCell: UITableViewCell {
     /// 点击事件
     @objc func actionClick() {
         if #available(iOS 11.0, *) {
-            self.viewController()?.navigationController?.pushViewController(HomeActivationViewController(), animated: true)
+//            self.viewController()?.navigationController?.pushViewController(HomeActivationViewController(), animated: true)
+            self.viewController()?.navigationController?.pushViewController(HomeLeadToProveViewController(), animated: true)
         } else {
             // Fallback on earlier versions
         }

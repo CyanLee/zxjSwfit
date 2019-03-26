@@ -53,6 +53,8 @@
 		34901402223A3D5700958E69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34901401223A3D5700958E69 /* Assets.xcassets */; };
 		34901405223A3D5700958E69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34901403223A3D5700958E69 /* LaunchScreen.storyboard */; };
 		34D38FB8223BB427007DCAC0 /* HomeTitleBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D38FB7223BB427007DCAC0 /* HomeTitleBannerCell.swift */; };
+		87592EF2224A021300FFE0A3 /* HomeLeadToProveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87592EF1224A021300FFE0A3 /* HomeLeadToProveViewController.swift */; };
+		87592EF4224A078500FFE0A3 /* HomeLeadToProveChooseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87592EF3224A078500FFE0A3 /* HomeLeadToProveChooseView.swift */; };
 		B1962184052D22F002730F34 /* Pods_zxjSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F46DC4F90A81B85AE675BF9 /* Pods_zxjSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -130,6 +132,8 @@
 		34901406223A3D5700958E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34D38FB7223BB427007DCAC0 /* HomeTitleBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTitleBannerCell.swift; sourceTree = "<group>"; };
 		3F46DC4F90A81B85AE675BF9 /* Pods_zxjSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zxjSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87592EF1224A021300FFE0A3 /* HomeLeadToProveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLeadToProveViewController.swift; sourceTree = "<group>"; };
+		87592EF3224A078500FFE0A3 /* HomeLeadToProveChooseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLeadToProveChooseView.swift; sourceTree = "<group>"; };
 		985D20551EC0DFE75A5A4ED8 /* Pods-zxjSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zxjSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zxjSwift/Pods-zxjSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -194,6 +198,7 @@
 				34D38FB7223BB427007DCAC0 /* HomeTitleBannerCell.swift */,
 				340CE28A223BEA8F003E8880 /* HomeStateCell.swift */,
 				3420FD5B223D5D1D0041288D /* HomeActivationCell.swift */,
+				87592EF3224A078500FFE0A3 /* HomeLeadToProveChooseView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 			children = (
 				3450360E223A474C00495854 /* HomeViewController.swift */,
 				340CE2C2223CCA4B003E8880 /* HomeActivationViewController.swift */,
+				87592EF1224A021300FFE0A3 /* HomeLeadToProveViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -455,7 +461,6 @@
 				349013F4223A3D5600958E69 /* Frameworks */,
 				349013F5223A3D5600958E69 /* Resources */,
 				E5C4FF33A822143FD8817ACF /* [CP] Embed Pods Frameworks */,
-				89914E7467503305A12C46B6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -512,21 +517,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		89914E7467503305A12C46B6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zxjSwift/Pods-zxjSwift-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C2E42DFA38E7096A5D706E11 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -550,27 +540,10 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-zxjSwift/Pods-zxjSwift-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDFullscreenPopGesture.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zxjSwift/Pods-zxjSwift-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-zxjSwift/Pods-zxjSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -592,6 +565,7 @@
 				3450361B223A5A4400495854 /* MakeMoneyViewController.swift in Sources */,
 				3450361F223A601A00495854 /* HomeHeaderView.swift in Sources */,
 				3450362A223A8E0900495854 /* HomeBannerCell.swift in Sources */,
+				87592EF4224A078500FFE0A3 /* HomeLeadToProveChooseView.swift in Sources */,
 				3450361D223A5A5C00495854 /* MineViewController.swift in Sources */,
 				3450368B223A950600495854 /* TAAbstractDotView.m in Sources */,
 				345036B7223A95DE00495854 /* UIButton+WebCache.m in Sources */,
@@ -615,6 +589,7 @@
 				34503685223A950600495854 /* SDCycleScrollView.m in Sources */,
 				345036B6223A95DE00495854 /* UIView+WebCacheOperation.m in Sources */,
 				3450360D223A463300495854 /* BaseViewControlle.swift in Sources */,
+				87592EF2224A021300FFE0A3 /* HomeLeadToProveViewController.swift in Sources */,
 				349013FB223A3D5600958E69 /* AppDelegate.swift in Sources */,
 				340CE28D223BFBF1003E8880 /* MineHeaderView.swift in Sources */,
 				340CE2B7223C9669003E8880 /* UIImageView+extension.swift in Sources */,
@@ -763,17 +738,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UQMJ3SY2V6;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "$(SRCROOT)/zxjSwift/Other/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "---.zxjSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jinri/Desktop/我的电脑/iOS/swift/zxjSwift/zxjSwift/Other/Quizzler-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/cyan/Desktop/我的电脑/个人/Swift/zxjswfit/zxjSwfit/zxjSwift/Other/Quizzler-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -784,17 +760,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UQMJ3SY2V6;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "$(SRCROOT)/zxjSwift/Other/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "---.zxjSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jinri/Desktop/我的电脑/iOS/swift/zxjSwift/zxjSwift/Other/Quizzler-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/cyan/Desktop/我的电脑/个人/Swift/zxjswfit/zxjSwfit/zxjSwift/Other/Quizzler-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

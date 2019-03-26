@@ -16,7 +16,7 @@ class MainNaveViewController: UINavigationController {
 //        navBar.barTintColor = DBGlobalRedColor()
         navBar.isTranslucent = false
         navBar.tintColor = UIColor.white
-        navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20)]
+        navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: titleMainColor(), NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 20)]
     }
     
     /**
