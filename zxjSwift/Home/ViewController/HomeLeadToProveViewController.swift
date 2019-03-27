@@ -39,23 +39,30 @@ class HomeLeadToProveViewController: BaseViewControlle,UITableViewDelegate,UITab
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeLeadToProveidenCell", for: indexPath) as! HomeLeadToProveidenCell
         return cell
     }
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain, separatorStyle: 0, delegate: self)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(HomeLeadToProveidenCell.self, forCellReuseIdentifier: "HomeLeadToProveidenCell")
         if #available(iOS 11.0, *) {
             tableView.contentInsetAdjustmentBehavior = .never
         }
         return tableView
     }()
 
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return propH(height: 667)
+    }
+    
+    /// 选择头部
     private lazy var headerView: HomeLeadToProveChooseView = {
         let headerView = HomeLeadToProveChooseView()
         return headerView
     }()
+
+    
     
     /*
     // MARK: - Navigation

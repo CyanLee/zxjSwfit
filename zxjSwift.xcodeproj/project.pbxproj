@@ -55,6 +55,8 @@
 		34D38FB8223BB427007DCAC0 /* HomeTitleBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D38FB7223BB427007DCAC0 /* HomeTitleBannerCell.swift */; };
 		87592EF2224A021300FFE0A3 /* HomeLeadToProveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87592EF1224A021300FFE0A3 /* HomeLeadToProveViewController.swift */; };
 		87592EF4224A078500FFE0A3 /* HomeLeadToProveChooseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87592EF3224A078500FFE0A3 /* HomeLeadToProveChooseView.swift */; };
+		8795E54F224B7C0C004C5582 /* HomeLeadToProveidenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795E54E224B7C0C004C5582 /* HomeLeadToProveidenCell.swift */; };
+		8795E551224BB8FE004C5582 /* UIButton+EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795E550224BB8FE004C5582 /* UIButton+EdgeInsets.swift */; };
 		B1962184052D22F002730F34 /* Pods_zxjSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F46DC4F90A81B85AE675BF9 /* Pods_zxjSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -134,6 +136,8 @@
 		3F46DC4F90A81B85AE675BF9 /* Pods_zxjSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zxjSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87592EF1224A021300FFE0A3 /* HomeLeadToProveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLeadToProveViewController.swift; sourceTree = "<group>"; };
 		87592EF3224A078500FFE0A3 /* HomeLeadToProveChooseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLeadToProveChooseView.swift; sourceTree = "<group>"; };
+		8795E54E224B7C0C004C5582 /* HomeLeadToProveidenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLeadToProveidenCell.swift; sourceTree = "<group>"; };
+		8795E550224BB8FE004C5582 /* UIButton+EdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+EdgeInsets.swift"; sourceTree = "<group>"; };
 		985D20551EC0DFE75A5A4ED8 /* Pods-zxjSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zxjSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zxjSwift/Pods-zxjSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,6 +203,7 @@
 				340CE28A223BEA8F003E8880 /* HomeStateCell.swift */,
 				3420FD5B223D5D1D0041288D /* HomeActivationCell.swift */,
 				87592EF3224A078500FFE0A3 /* HomeLeadToProveChooseView.swift */,
+				8795E54E224B7C0C004C5582 /* HomeLeadToProveidenCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -420,6 +425,7 @@
 				340CE2BA223C9793003E8880 /* UITableView+extension.swift */,
 				340CE2BC223C980A003E8880 /* UICollectionView+extension.swift */,
 				340CE2B2223C93B3003E8880 /* UILabel+extension.swift */,
+				8795E550224BB8FE004C5582 /* UIButton+EdgeInsets.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -588,7 +594,9 @@
 				34503686223A950600495854 /* UIView+SDExtension.m in Sources */,
 				34503685223A950600495854 /* SDCycleScrollView.m in Sources */,
 				345036B6223A95DE00495854 /* UIView+WebCacheOperation.m in Sources */,
+				8795E54F224B7C0C004C5582 /* HomeLeadToProveidenCell.swift in Sources */,
 				3450360D223A463300495854 /* BaseViewControlle.swift in Sources */,
+				8795E551224BB8FE004C5582 /* UIButton+EdgeInsets.swift in Sources */,
 				87592EF2224A021300FFE0A3 /* HomeLeadToProveViewController.swift in Sources */,
 				349013FB223A3D5600958E69 /* AppDelegate.swift in Sources */,
 				340CE28D223BFBF1003E8880 /* MineHeaderView.swift in Sources */,

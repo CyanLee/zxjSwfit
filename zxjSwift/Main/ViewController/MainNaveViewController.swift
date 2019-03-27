@@ -16,6 +16,8 @@ class MainNaveViewController: UINavigationController {
 //        navBar.barTintColor = DBGlobalRedColor()
         navBar.isTranslucent = false
         navBar.tintColor = UIColor.white
+        navBar.shadowImage = UIImage()
+        navBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: titleMainColor(), NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 20)]
     }
     
@@ -42,8 +44,5 @@ class MainNaveViewController: UINavigationController {
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
         }
         popViewController(animated: true)
-    }
-
-    
-
+    }    
 }
