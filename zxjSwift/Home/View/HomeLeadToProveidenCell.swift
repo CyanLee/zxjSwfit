@@ -10,7 +10,13 @@ import UIKit
 
 class HomeLeadToProveidenCell: UITableViewCell {
     
-    var lastView = UIView()
+    /// 身份证反面的view
+    var lastIDView = UIView()
+    
+    /// 有效期的TF
+    var lastTFView = UIView()
+    
+    var selIDView = UILabel()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -45,11 +51,18 @@ class HomeLeadToProveidenCell: UITableViewCell {
         
     }
     
+    
+    /// 底部提示
+    @objc func tipClick() {
+        
+    }
+    
     func setupUI() {
         for i in 0...1 {
-            let baseView = UIView(frame: .zero, bgColor: 0xFFDD01)
+            let baseView = UIView(frame: .zero, bgColor: 0xffffff)
             baseView.layer.masksToBounds = true
             baseView.layer.borderWidth = propW(width: 1)
+            baseView.layer.borderColor = kRGBColorFromHex(rgbValue: 0xEBEBEB).cgColor
             let imgView = UIImageView(imageName: "", cornerRadius: 0, frame: .zero)
             let titleLB = UILabel(title: "", textColor: 0x333333, font: UIFont.boldSystemFont(ofSize: 15), frame: .zero)
             let descLB = UILabel(title: "", textColor: 0x777777, font: UIFont.systemFont(ofSize: 13), frame: .zero)
@@ -101,17 +114,80 @@ class HomeLeadToProveidenCell: UITableViewCell {
                 imgView.image = UIImage(named: "home_lead_id_nor")
                 titleLB.text = "身份证反面"
                 descLB.text = "请拍摄身份证反面照"
-                lastView = baseView
+                lastIDView = baseView
             }
         }
+        
+        for i in 0...2 {
+            let baseView = UIView(frame: .zero, bgColor: 0xffffff)
+            let titleLB = UILabel(title: "", textColor: 0x333333, font: UIFont.systemFont(ofSize: 15), frame: .zero)
+            let descTF = UITextField()
+            descTF.textColor = kRGBColorFromHex(rgbValue: 0x333333)
+            descTF.font = UIFont.systemFont(ofSize: 15)
+            let lineView = UIView(frame: .zero, bgColor: 0xEBEBEB)
+            
+            addSubview(baseView)
+            baseView.addSubview(titleLB)
+            baseView.addSubview(descTF)
+            baseView.addSubview(lineView)
+            
+            baseView.snp.makeConstraints { (make) in
+                make.top.equalTo(lastIDView.snp.bottom).offset(propH(height:5 + CGFloat(i * 63)))
+                make.left.equalTo(propW(width: 25))
+                make.right.equalTo(propW(width: -25))
+                make.height.equalTo(propH(height: 63))
+            }
+            titleLB.snp.makeConstraints { (make) in
+                make.centerY.equalTo(baseView)
+                make.left.equalTo(propW(width: 11))
+            }
+            descTF.snp.makeConstraints { (make) in
+                make.top.equalTo(0)
+                make.bottom.equalTo(0)
+                make.right.equalTo(0)
+                make.left.equalTo(titleLB.snp.right).offset(propW(width: 21))
+            }
+            lineView.snp.makeConstraints { (make) in
+                make.bottom.equalTo(0)
+                make.left.equalTo(0)
+                make.right.equalTo(0)
+                make.height.equalTo(propH(height: 1))
+            }
+            
+            switch i {
+            case 0 :
+                titleLB.text = "姓名"
+                break
+            case 1 :
+                titleLB.text = "身份证"
+                break
+            case 2:
+                titleLB.text = "有效期"
+                lastTFView = baseView
+                break
+            default:
+                break
+            }
+            
+        }
+        
         let actionBtn = UIButton(title: "提交", font: UIFont.boldSystemFont(ofSize: 18), titleColor: 0xFFDD01, cornerRadius: propH(height: 23), imageName: "", frame: .zero, target: self, sle: #selector(actionClick))
         actionBtn.backgroundColor = titleMainColor()
         addSubview(actionBtn)
         actionBtn.snp.makeConstraints { (make) in
-            make.top.equalTo(self.lastView.snp.bottom).offset(propH(height: 65))
+            make.top.equalTo(lastTFView.snp.bottom).offset(propH(height: 22))
             make.left.equalTo(propW(width: 32))
             make.right.equalTo(propW(width: -32))
             make.height.equalTo(propH(height: 46))
+        }
+        
+        let tipBtn = UIButton(title: "", font: UIFont.systemFont(ofSize: 13), titleColor: 0x999999, cornerRadius: 0, imageName: "", frame: .zero, target: self, sle: #selector(tipClick))
+        tipBtn.set(image: UIImage(named: "home_tip_icon"), title: "知心借才去智能加密，充分保障您的信息安全", titlePosition: .right,
+                 additionalSpacing: 10.0, state: .normal)
+        addSubview(tipBtn)
+        tipBtn.snp.makeConstraints { (make) in
+            make.bottom.equalTo(propH(height: -20))
+            make.centerX.equalTo(self)
         }
     }
 }

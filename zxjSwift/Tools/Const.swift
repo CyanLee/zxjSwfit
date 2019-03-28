@@ -65,3 +65,27 @@ func kRGBColorFromHex(rgbValue: Int) -> (UIColor) {
                    blue: ((CGFloat)(rgbValue & 0xFF)) / 255.0,
                    alpha: 1.0)
 }
+
+
+/// 判断是否为iphoneX
+///
+/// - Returns: 是或不是
+func isX() -> Bool {
+    if UIScreen.main.bounds.height == 812 {
+        return true
+    }
+    return false
+}
+
+
+/// 获取导航栏高度
+///
+/// - Returns: CGFloat
+func knaviH() -> CGFloat {
+    if isX() {
+        return 88
+    }
+    return 64
+}
+
+

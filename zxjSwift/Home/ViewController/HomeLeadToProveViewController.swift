@@ -53,7 +53,7 @@ class HomeLeadToProveViewController: BaseViewControlle,UITableViewDelegate,UITab
     }()
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return propH(height: 667)
+        return propH(height: 611 - knaviH())
     }
     
     /// 选择头部
