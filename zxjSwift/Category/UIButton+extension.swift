@@ -35,7 +35,6 @@ extension UIButton {
         if imageName.count > 0 || !imageName.isEmpty {
             self.setImage(UIImage(named: imageName), for: .normal)
         }
-        
         self.addTarget(target, action: sle, for: .touchUpInside)
 
     }

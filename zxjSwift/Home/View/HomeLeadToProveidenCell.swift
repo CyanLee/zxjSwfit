@@ -16,7 +16,28 @@ class HomeLeadToProveidenCell: UITableViewCell {
     /// 有效期的TF
     var lastTFView = UIView()
     
-    var selIDView = UILabel()
+    /// 身份证正面文字描述
+    var selIDLB = UILabel()
+    
+    /// 身份证反面文字描述
+    var norIDLB = UILabel()
+    
+    /// 姓名试图
+    var nameView = UIView()
+    
+    /// 身份证视图
+    var idenView = UIView()
+    
+    /// 姓名TF
+    var nameTF = UITextField()
+    
+    /// 身份证TF
+    var idenTF = UITextField()
+    
+    /// 有效期TF
+    var timeTF = UITextField()
+    
+    
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -57,7 +78,9 @@ class HomeLeadToProveidenCell: UITableViewCell {
         
     }
     
-    func setupUI() {
+    
+    /// 创建身份证拍照视图
+    func setupUItakingView() {
         for i in 0...1 {
             let baseView = UIView(frame: .zero, bgColor: 0xffffff)
             baseView.layer.masksToBounds = true
@@ -110,14 +133,20 @@ class HomeLeadToProveidenCell: UITableViewCell {
                 imgView.image = UIImage(named: "home_lead_id_sel")
                 titleLB.text = "身份证正面"
                 descLB.text = "请拍摄身份证正面照"
+                selIDLB = descLB
             }else{
                 imgView.image = UIImage(named: "home_lead_id_nor")
                 titleLB.text = "身份证反面"
                 descLB.text = "请拍摄身份证反面照"
                 lastIDView = baseView
+                norIDLB = descLB
             }
         }
-        
+    }
+    
+    
+    /// 创建TF视图
+    func setupUIInfoTFView() {
         for i in 0...2 {
             let baseView = UIView(frame: .zero, bgColor: 0xffffff)
             let titleLB = UILabel(title: "", textColor: 0x333333, font: UIFont.systemFont(ofSize: 15), frame: .zero)
@@ -157,20 +186,31 @@ class HomeLeadToProveidenCell: UITableViewCell {
             switch i {
             case 0 :
                 titleLB.text = "姓名"
+                nameView = baseView
+                nameTF = descTF
                 break
             case 1 :
                 titleLB.text = "身份证"
+                idenView = baseView
+                idenTF = descTF
                 break
             case 2:
                 titleLB.text = "有效期"
                 lastTFView = baseView
+                timeTF = descTF
                 break
             default:
                 break
             }
             
+            baseView.isHidden = true
+            
         }
-        
+    }
+    
+    
+    /// 创建按钮与提示
+    func setupUIBottomView() {
         let actionBtn = UIButton(title: "提交", font: UIFont.boldSystemFont(ofSize: 18), titleColor: 0xFFDD01, cornerRadius: propH(height: 23), imageName: "", frame: .zero, target: self, sle: #selector(actionClick))
         actionBtn.backgroundColor = titleMainColor()
         addSubview(actionBtn)
@@ -183,11 +223,18 @@ class HomeLeadToProveidenCell: UITableViewCell {
         
         let tipBtn = UIButton(title: "", font: UIFont.systemFont(ofSize: 13), titleColor: 0x999999, cornerRadius: 0, imageName: "", frame: .zero, target: self, sle: #selector(tipClick))
         tipBtn.set(image: UIImage(named: "home_tip_icon"), title: "知心借才去智能加密，充分保障您的信息安全", titlePosition: .right,
-                 additionalSpacing: 10.0, state: .normal)
+                   additionalSpacing: 10.0, state: .normal)
         addSubview(tipBtn)
         tipBtn.snp.makeConstraints { (make) in
             make.bottom.equalTo(propH(height: -20))
             make.centerX.equalTo(self)
         }
+        actionBtn.isHidden = true
+    }
+    
+    func setupUI() {
+        setupUItakingView()
+        setupUIInfoTFView()
+        setupUIBottomView()
     }
 }
