@@ -39,20 +39,15 @@ class HomeLeadToProveViewController: BaseViewControlle,UITableViewDelegate,UITab
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeLeadToProveContactCell", for: indexPath) as! HomeLeadToProveContactCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeLeadToProveBankInfoCell", for: indexPath) as! HomeLeadToProveBankInfoCell
         return cell
     }
     
     private lazy var tableView: UITableView = {
-//        let tableView = UITableView(frame: .zero, style: .plain, separatorStyle: 0, delegate: self)
-//        tableView.register(HomeLeadToProveidenCell.self, forCellReuseIdentifier: "HomeLeadToProveidenCell")
-//        if #available(iOS 11.0, *) {
-//            tableView.contentInsetAdjustmentBehavior = .never
-//        }
-//        return tableView
         let tableView = UITableView(frame: .zero, style: .plain, separatorStyle: 0, delegate: self)
         tableView.register(HomeLeadToProveidenCell.self, forCellReuseIdentifier: "HomeLeadToProveidenCell")
         tableView.register(HomeLeadToProveContactCell.self, forCellReuseIdentifier: "HomeLeadToProveContactCell")
+        tableView.register(HomeLeadToProveBankInfoCell.self, forCellReuseIdentifier: "HomeLeadToProveBankInfoCell")
         if #available(iOS 11.0, *) {
             tableView.contentInsetAdjustmentBehavior = .never
         }
@@ -61,7 +56,8 @@ class HomeLeadToProveViewController: BaseViewControlle,UITableViewDelegate,UITab
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 //        return propH(height: 611 - knaviH())
-        return propH(height: 789)
+//        return propH(height: 789)
+        return propH(height: 611 - knaviH())
     }
     
     /// 选择头部

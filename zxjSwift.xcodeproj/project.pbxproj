@@ -55,6 +55,7 @@
 		34D38FB8223BB427007DCAC0 /* HomeTitleBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D38FB7223BB427007DCAC0 /* HomeTitleBannerCell.swift */; };
 		87592EF2224A021300FFE0A3 /* HomeLeadToProveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87592EF1224A021300FFE0A3 /* HomeLeadToProveViewController.swift */; };
 		87592EF4224A078500FFE0A3 /* HomeLeadToProveChooseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87592EF3224A078500FFE0A3 /* HomeLeadToProveChooseView.swift */; };
+		8768BF902252EFB000AFCAEE /* HomeLeadToProveBankInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768BF8F2252EFB000AFCAEE /* HomeLeadToProveBankInfoCell.swift */; };
 		87917148224CEC1B00AB685E /* HomeLeadToProveContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87917147224CEC1B00AB685E /* HomeLeadToProveContactCell.swift */; };
 		8795E54F224B7C0C004C5582 /* HomeLeadToProveidenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795E54E224B7C0C004C5582 /* HomeLeadToProveidenCell.swift */; };
 		8795E551224BB8FE004C5582 /* UIButton+EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795E550224BB8FE004C5582 /* UIButton+EdgeInsets.swift */; };
@@ -137,6 +138,7 @@
 		3F46DC4F90A81B85AE675BF9 /* Pods_zxjSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zxjSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87592EF1224A021300FFE0A3 /* HomeLeadToProveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLeadToProveViewController.swift; sourceTree = "<group>"; };
 		87592EF3224A078500FFE0A3 /* HomeLeadToProveChooseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLeadToProveChooseView.swift; sourceTree = "<group>"; };
+		8768BF8F2252EFB000AFCAEE /* HomeLeadToProveBankInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLeadToProveBankInfoCell.swift; sourceTree = "<group>"; };
 		87917147224CEC1B00AB685E /* HomeLeadToProveContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLeadToProveContactCell.swift; sourceTree = "<group>"; };
 		8795E54E224B7C0C004C5582 /* HomeLeadToProveidenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLeadToProveidenCell.swift; sourceTree = "<group>"; };
 		8795E550224BB8FE004C5582 /* UIButton+EdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+EdgeInsets.swift"; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				87592EF3224A078500FFE0A3 /* HomeLeadToProveChooseView.swift */,
 				8795E54E224B7C0C004C5582 /* HomeLeadToProveidenCell.swift */,
 				87917147224CEC1B00AB685E /* HomeLeadToProveContactCell.swift */,
+				8768BF8F2252EFB000AFCAEE /* HomeLeadToProveBankInfoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -601,6 +604,7 @@
 				345036B7223A95DE00495854 /* UIButton+WebCache.m in Sources */,
 				3450368A223A950600495854 /* TAAnimatedDotView.m in Sources */,
 				340CE2BF223CA209003E8880 /* MineContentView.swift in Sources */,
+				8768BF902252EFB000AFCAEE /* HomeLeadToProveBankInfoCell.swift in Sources */,
 				34503687223A950600495854 /* SDCollectionViewCell.m in Sources */,
 				3420FD5C223D5D1D0041288D /* HomeActivationCell.swift in Sources */,
 				345036AF223A95DE00495854 /* UIImage+MultiFormat.m in Sources */,
