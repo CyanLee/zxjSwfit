@@ -53,6 +53,9 @@
 		34901402223A3D5700958E69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34901401223A3D5700958E69 /* Assets.xcassets */; };
 		34901405223A3D5700958E69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34901403223A3D5700958E69 /* LaunchScreen.storyboard */; };
 		34D38FB8223BB427007DCAC0 /* HomeTitleBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D38FB7223BB427007DCAC0 /* HomeTitleBannerCell.swift */; };
+		870F7ABE22558D3900883348 /* HomeApplyLoanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F7ABD22558D3900883348 /* HomeApplyLoanViewController.swift */; };
+		870F7AC022558EDA00883348 /* HomeApplyLoanImgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F7ABF22558EDA00883348 /* HomeApplyLoanImgCell.swift */; };
+		870F7AC22255A0D800883348 /* HomeApplyLoanImgFootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F7AC12255A0D800883348 /* HomeApplyLoanImgFootView.swift */; };
 		87592EF2224A021300FFE0A3 /* HomeLeadToProveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87592EF1224A021300FFE0A3 /* HomeLeadToProveViewController.swift */; };
 		87592EF4224A078500FFE0A3 /* HomeLeadToProveChooseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87592EF3224A078500FFE0A3 /* HomeLeadToProveChooseView.swift */; };
 		8768BF902252EFB000AFCAEE /* HomeLeadToProveBankInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768BF8F2252EFB000AFCAEE /* HomeLeadToProveBankInfoCell.swift */; };
@@ -136,6 +139,9 @@
 		34901406223A3D5700958E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34D38FB7223BB427007DCAC0 /* HomeTitleBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTitleBannerCell.swift; sourceTree = "<group>"; };
 		3F46DC4F90A81B85AE675BF9 /* Pods_zxjSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zxjSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		870F7ABD22558D3900883348 /* HomeApplyLoanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeApplyLoanViewController.swift; sourceTree = "<group>"; };
+		870F7ABF22558EDA00883348 /* HomeApplyLoanImgCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeApplyLoanImgCell.swift; sourceTree = "<group>"; };
+		870F7AC12255A0D800883348 /* HomeApplyLoanImgFootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeApplyLoanImgFootView.swift; sourceTree = "<group>"; };
 		87592EF1224A021300FFE0A3 /* HomeLeadToProveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLeadToProveViewController.swift; sourceTree = "<group>"; };
 		87592EF3224A078500FFE0A3 /* HomeLeadToProveChooseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLeadToProveChooseView.swift; sourceTree = "<group>"; };
 		8768BF8F2252EFB000AFCAEE /* HomeLeadToProveBankInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLeadToProveBankInfoCell.swift; sourceTree = "<group>"; };
@@ -210,6 +216,8 @@
 				8795E54E224B7C0C004C5582 /* HomeLeadToProveidenCell.swift */,
 				87917147224CEC1B00AB685E /* HomeLeadToProveContactCell.swift */,
 				8768BF8F2252EFB000AFCAEE /* HomeLeadToProveBankInfoCell.swift */,
+				870F7ABF22558EDA00883348 /* HomeApplyLoanImgCell.swift */,
+				870F7AC12255A0D800883348 /* HomeApplyLoanImgFootView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -220,6 +228,7 @@
 				3450360E223A474C00495854 /* HomeViewController.swift */,
 				340CE2C2223CCA4B003E8880 /* HomeActivationViewController.swift */,
 				87592EF1224A021300FFE0A3 /* HomeLeadToProveViewController.swift */,
+				870F7ABD22558D3900883348 /* HomeApplyLoanViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -596,6 +605,7 @@
 				345036AA223A95DE00495854 /* SDWebImageManager.m in Sources */,
 				34503607223A44F400495854 /* MainTabBarViewController.swift in Sources */,
 				3450361B223A5A4400495854 /* MakeMoneyViewController.swift in Sources */,
+				870F7AC22255A0D800883348 /* HomeApplyLoanImgFootView.swift in Sources */,
 				3450361F223A601A00495854 /* HomeHeaderView.swift in Sources */,
 				3450362A223A8E0900495854 /* HomeBannerCell.swift in Sources */,
 				87592EF4224A078500FFE0A3 /* HomeLeadToProveChooseView.swift in Sources */,
@@ -632,6 +642,8 @@
 				340CE2B7223C9669003E8880 /* UIImageView+extension.swift in Sources */,
 				345036AC223A95DE00495854 /* UIImageView+HighlightedWebCache.m in Sources */,
 				340CE2BB223C9793003E8880 /* UITableView+extension.swift in Sources */,
+				870F7ABE22558D3900883348 /* HomeApplyLoanViewController.swift in Sources */,
+				870F7AC022558EDA00883348 /* HomeApplyLoanImgCell.swift in Sources */,
 				345036B2223A95DE00495854 /* SDImageCache.m in Sources */,
 				345036B5223A95DE00495854 /* UIImageView+WebCache.m in Sources */,
 				345036AD223A95DE00495854 /* SDWebImageDownloader.m in Sources */,
