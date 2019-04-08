@@ -78,7 +78,7 @@ class HomeHeaderView: UIView {
     
     /// 客服点击事件
     @objc func serviceClick() {
-        
+        self.viewController()?.navigationController?.pushViewController(HomeWebViewController(type_id: "", dealID: ""), animated: true)
     }
     
 }

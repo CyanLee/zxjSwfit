@@ -62,6 +62,9 @@
 		87917148224CEC1B00AB685E /* HomeLeadToProveContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87917147224CEC1B00AB685E /* HomeLeadToProveContactCell.swift */; };
 		8795E54F224B7C0C004C5582 /* HomeLeadToProveidenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795E54E224B7C0C004C5582 /* HomeLeadToProveidenCell.swift */; };
 		8795E551224BB8FE004C5582 /* UIButton+EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795E550224BB8FE004C5582 /* UIButton+EdgeInsets.swift */; };
+		87F45D35225ACE69001D3E11 /* HomeWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F45D34225ACE69001D3E11 /* HomeWebViewController.swift */; };
+		87F45D37225ADFFF001D3E11 /* HomeAlsoMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F45D36225ADFFF001D3E11 /* HomeAlsoMoneyViewController.swift */; };
+		87F45D39225AE68D001D3E11 /* HomeAlsoMoneyNaviView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F45D38225AE68D001D3E11 /* HomeAlsoMoneyNaviView.swift */; };
 		B1962184052D22F002730F34 /* Pods_zxjSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F46DC4F90A81B85AE675BF9 /* Pods_zxjSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -148,6 +151,9 @@
 		87917147224CEC1B00AB685E /* HomeLeadToProveContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLeadToProveContactCell.swift; sourceTree = "<group>"; };
 		8795E54E224B7C0C004C5582 /* HomeLeadToProveidenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLeadToProveidenCell.swift; sourceTree = "<group>"; };
 		8795E550224BB8FE004C5582 /* UIButton+EdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+EdgeInsets.swift"; sourceTree = "<group>"; };
+		87F45D34225ACE69001D3E11 /* HomeWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWebViewController.swift; sourceTree = "<group>"; };
+		87F45D36225ADFFF001D3E11 /* HomeAlsoMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAlsoMoneyViewController.swift; sourceTree = "<group>"; };
+		87F45D38225AE68D001D3E11 /* HomeAlsoMoneyNaviView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAlsoMoneyNaviView.swift; sourceTree = "<group>"; };
 		985D20551EC0DFE75A5A4ED8 /* Pods-zxjSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zxjSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zxjSwift/Pods-zxjSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -218,6 +224,7 @@
 				8768BF8F2252EFB000AFCAEE /* HomeLeadToProveBankInfoCell.swift */,
 				870F7ABF22558EDA00883348 /* HomeApplyLoanImgCell.swift */,
 				870F7AC12255A0D800883348 /* HomeApplyLoanImgFootView.swift */,
+				87F45D38225AE68D001D3E11 /* HomeAlsoMoneyNaviView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -229,6 +236,8 @@
 				340CE2C2223CCA4B003E8880 /* HomeActivationViewController.swift */,
 				87592EF1224A021300FFE0A3 /* HomeLeadToProveViewController.swift */,
 				870F7ABD22558D3900883348 /* HomeApplyLoanViewController.swift */,
+				87F45D34225ACE69001D3E11 /* HomeWebViewController.swift */,
+				87F45D36225ADFFF001D3E11 /* HomeAlsoMoneyViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -615,10 +624,12 @@
 				3450368A223A950600495854 /* TAAnimatedDotView.m in Sources */,
 				340CE2BF223CA209003E8880 /* MineContentView.swift in Sources */,
 				8768BF902252EFB000AFCAEE /* HomeLeadToProveBankInfoCell.swift in Sources */,
+				87F45D35225ACE69001D3E11 /* HomeWebViewController.swift in Sources */,
 				34503687223A950600495854 /* SDCollectionViewCell.m in Sources */,
 				3420FD5C223D5D1D0041288D /* HomeActivationCell.swift in Sources */,
 				345036AF223A95DE00495854 /* UIImage+MultiFormat.m in Sources */,
 				340CE2C1223CAA26003E8880 /* MineContentViewCell.swift in Sources */,
+				87F45D37225ADFFF001D3E11 /* HomeAlsoMoneyViewController.swift in Sources */,
 				340CE2C3223CCA4B003E8880 /* HomeActivationViewController.swift in Sources */,
 				340CE2B9223C96C0003E8880 /* UIView+extension.swift in Sources */,
 				345036B3223A95DE00495854 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -632,6 +643,7 @@
 				34D38FB8223BB427007DCAC0 /* HomeTitleBannerCell.swift in Sources */,
 				34503686223A950600495854 /* UIView+SDExtension.m in Sources */,
 				34503685223A950600495854 /* SDCycleScrollView.m in Sources */,
+				87F45D39225AE68D001D3E11 /* HomeAlsoMoneyNaviView.swift in Sources */,
 				345036B6223A95DE00495854 /* UIView+WebCacheOperation.m in Sources */,
 				8795E54F224B7C0C004C5582 /* HomeLeadToProveidenCell.swift in Sources */,
 				3450360D223A463300495854 /* BaseViewControlle.swift in Sources */,
@@ -791,10 +803,7 @@
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "$(SRCROOT)/zxjSwift/Other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "---.zxjSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/cyan/Desktop/我的电脑/个人/Swift/zxjswfit/zxjSwfit/zxjSwift/Other/Quizzler-Bridging-Header.h";
@@ -813,10 +822,7 @@
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "$(SRCROOT)/zxjSwift/Other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "---.zxjSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/cyan/Desktop/我的电脑/个人/Swift/zxjswfit/zxjSwfit/zxjSwift/Other/Quizzler-Bridging-Header.h";
