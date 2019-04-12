@@ -56,6 +56,8 @@
 		870F7ABE22558D3900883348 /* HomeApplyLoanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F7ABD22558D3900883348 /* HomeApplyLoanViewController.swift */; };
 		870F7AC022558EDA00883348 /* HomeApplyLoanImgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F7ABF22558EDA00883348 /* HomeApplyLoanImgCell.swift */; };
 		870F7AC22255A0D800883348 /* HomeApplyLoanImgFootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F7AC12255A0D800883348 /* HomeApplyLoanImgFootView.swift */; };
+		874278B5226072E4000A1163 /* HomeAlsoMoneyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874278B4226072E4000A1163 /* HomeAlsoMoneyHeaderView.swift */; };
+		874278B722607B99000A1163 /* HomeAlsoMoneyTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874278B622607B99000A1163 /* HomeAlsoMoneyTitleCell.swift */; };
 		87592EF2224A021300FFE0A3 /* HomeLeadToProveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87592EF1224A021300FFE0A3 /* HomeLeadToProveViewController.swift */; };
 		87592EF4224A078500FFE0A3 /* HomeLeadToProveChooseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87592EF3224A078500FFE0A3 /* HomeLeadToProveChooseView.swift */; };
 		8768BF902252EFB000AFCAEE /* HomeLeadToProveBankInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768BF8F2252EFB000AFCAEE /* HomeLeadToProveBankInfoCell.swift */; };
@@ -145,6 +147,8 @@
 		870F7ABD22558D3900883348 /* HomeApplyLoanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeApplyLoanViewController.swift; sourceTree = "<group>"; };
 		870F7ABF22558EDA00883348 /* HomeApplyLoanImgCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeApplyLoanImgCell.swift; sourceTree = "<group>"; };
 		870F7AC12255A0D800883348 /* HomeApplyLoanImgFootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeApplyLoanImgFootView.swift; sourceTree = "<group>"; };
+		874278B4226072E4000A1163 /* HomeAlsoMoneyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAlsoMoneyHeaderView.swift; sourceTree = "<group>"; };
+		874278B622607B99000A1163 /* HomeAlsoMoneyTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAlsoMoneyTitleCell.swift; sourceTree = "<group>"; };
 		87592EF1224A021300FFE0A3 /* HomeLeadToProveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLeadToProveViewController.swift; sourceTree = "<group>"; };
 		87592EF3224A078500FFE0A3 /* HomeLeadToProveChooseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLeadToProveChooseView.swift; sourceTree = "<group>"; };
 		8768BF8F2252EFB000AFCAEE /* HomeLeadToProveBankInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLeadToProveBankInfoCell.swift; sourceTree = "<group>"; };
@@ -225,6 +229,8 @@
 				870F7ABF22558EDA00883348 /* HomeApplyLoanImgCell.swift */,
 				870F7AC12255A0D800883348 /* HomeApplyLoanImgFootView.swift */,
 				87F45D38225AE68D001D3E11 /* HomeAlsoMoneyNaviView.swift */,
+				874278B4226072E4000A1163 /* HomeAlsoMoneyHeaderView.swift */,
+				874278B622607B99000A1163 /* HomeAlsoMoneyTitleCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -629,6 +635,7 @@
 				3420FD5C223D5D1D0041288D /* HomeActivationCell.swift in Sources */,
 				345036AF223A95DE00495854 /* UIImage+MultiFormat.m in Sources */,
 				340CE2C1223CAA26003E8880 /* MineContentViewCell.swift in Sources */,
+				874278B722607B99000A1163 /* HomeAlsoMoneyTitleCell.swift in Sources */,
 				87F45D37225ADFFF001D3E11 /* HomeAlsoMoneyViewController.swift in Sources */,
 				340CE2C3223CCA4B003E8880 /* HomeActivationViewController.swift in Sources */,
 				340CE2B9223C96C0003E8880 /* UIView+extension.swift in Sources */,
@@ -655,6 +662,7 @@
 				345036AC223A95DE00495854 /* UIImageView+HighlightedWebCache.m in Sources */,
 				340CE2BB223C9793003E8880 /* UITableView+extension.swift in Sources */,
 				870F7ABE22558D3900883348 /* HomeApplyLoanViewController.swift in Sources */,
+				874278B5226072E4000A1163 /* HomeAlsoMoneyHeaderView.swift in Sources */,
 				870F7AC022558EDA00883348 /* HomeApplyLoanImgCell.swift in Sources */,
 				345036B2223A95DE00495854 /* SDImageCache.m in Sources */,
 				345036B5223A95DE00495854 /* UIImageView+WebCache.m in Sources */,

@@ -8,8 +8,8 @@
 
 import UIKit
 
-class HomeAlsoMoneyViewController: BaseViewControlle {
-
+class HomeAlsoMoneyViewController: BaseViewControlle,UITableViewDelegate,UITableViewDataSource {
+    
     /// 修改状态栏的背景色
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -40,6 +40,7 @@ class HomeAlsoMoneyViewController: BaseViewControlle {
     func createUI() {
         view.addSubview(bgView)
         view.addSubview(naviView)
+        view.addSubview(tableView)
         bgView.snp.makeConstraints { (make) in
             make.top.equalTo(0)
             make.left.equalTo(0)
@@ -52,12 +53,29 @@ class HomeAlsoMoneyViewController: BaseViewControlle {
             make.right.equalTo(0)
             make.height.equalTo(knaviH())
         }
+        tableView.snp.makeConstraints { (make) in
+            make.top.equalTo(naviView.snp.bottom).offset(propH(height: 0))
+            make.left.equalTo(0)
+            make.right.equalTo(0)
+            make.bottom.equalTo(0)
+        }
         
     }
     /// 私用方法
     /// 公共方法
     /// 点击事件
     /// 代理协议
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeAlsoMoneyTitleCell", for: indexPath) as! HomeAlsoMoneyTitleCell
+        return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 40
+    }
     /// 网络请求
     /// 懒加载
     
@@ -71,6 +89,21 @@ class HomeAlsoMoneyViewController: BaseViewControlle {
     private lazy var naviView: HomeAlsoMoneyNaviView = {
         let naviView = HomeAlsoMoneyNaviView()
         return naviView;
+    }()
+    
+    /// 创建列表
+    private lazy var tableView: UITableView = {
+        let tableView = UITableView(frame: .zero, style: .plain, separatorStyle: 0, delegate: self)
+        tableView.register(HomeAlsoMoneyTitleCell.self, forCellReuseIdentifier: "HomeAlsoMoneyTitleCell")
+        tableView.tableHeaderView = headerView
+        tableView.backgroundColor = UIColor.clear
+        return tableView
+    }()
+    
+    /// 初始化头部视图
+    private lazy var headerView: HomeAlsoMoneyHeaderView = {
+        let headerView = HomeAlsoMoneyHeaderView(frame: CGRect(x: 0, y: 0, width: SW, height: propH(height: 141)))
+        return headerView
     }()
     
     /// getset方法
