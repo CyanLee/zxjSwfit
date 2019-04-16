@@ -71,7 +71,8 @@ class HomeStateCell: UITableViewCell {
     @objc func actionClick() {
         if #available(iOS 11.0, *) {
 //            self.viewController()?.navigationController?.pushViewController(HomeActivationViewController(), animated: true)
-            self.viewController()?.navigationController?.pushViewController(HomeAlsoMoneyViewController(), animated: true)
+//            self.viewController()?.navigationController?.pushViewController(HomeAlsoMoneyViewController(), animated: true)
+            self.viewController()?.navigationController?.pushViewController(HomeDataProveViewController(), animated: true)
         } else {
             // Fallback on earlier versions
         }

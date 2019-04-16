@@ -4,7 +4,7 @@
 //
 //  Created by 管家人 on 2019/4/8.
 //  Copyright © 2019 今日. All rights reserved.
-//
+//  还款界面
 
 import UIKit
 
@@ -66,15 +66,26 @@ class HomeAlsoMoneyViewController: BaseViewControlle,UITableViewDelegate,UITable
     /// 点击事件
     /// 代理协议
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeAlsoMoneyTitleCell", for: indexPath) as! HomeAlsoMoneyTitleCell
-        return cell
+        if indexPath.row != 4 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "HomeAlsoMoneyTitleCell", for: indexPath) as! HomeAlsoMoneyTitleCell
+            cell.index = indexPath.row
+            return cell
+        }else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "HomeAlsoMoneyPsyTypeCell", for: indexPath) as! HomeAlsoMoneyPsyTypeCell
+            return cell
+        }
+        
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 40
+        if indexPath.row != 4 {
+            return propH(height: 40)
+        }else{
+            return propH(height: 99)
+        }
     }
     /// 网络请求
     /// 懒加载
@@ -95,7 +106,9 @@ class HomeAlsoMoneyViewController: BaseViewControlle,UITableViewDelegate,UITable
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain, separatorStyle: 0, delegate: self)
         tableView.register(HomeAlsoMoneyTitleCell.self, forCellReuseIdentifier: "HomeAlsoMoneyTitleCell")
+        tableView.register(HomeAlsoMoneyPsyTypeCell.self, forCellReuseIdentifier: "HomeAlsoMoneyPsyTypeCell")
         tableView.tableHeaderView = headerView
+        tableView.tableFooterView = footerView
         tableView.backgroundColor = UIColor.clear
         return tableView
     }()
@@ -104,6 +117,12 @@ class HomeAlsoMoneyViewController: BaseViewControlle,UITableViewDelegate,UITable
     private lazy var headerView: HomeAlsoMoneyHeaderView = {
         let headerView = HomeAlsoMoneyHeaderView(frame: CGRect(x: 0, y: 0, width: SW, height: propH(height: 141)))
         return headerView
+    }()
+    
+    /// 初始化尾部视图
+    private lazy var footerView: HomeAlsoMoneyFootView = {
+        let footerView = HomeAlsoMoneyFootView(frame: CGRect(x: 0, y: 0, width: SW, height: propH(height: 158)))
+        return footerView
     }()
     
     /// getset方法

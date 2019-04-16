@@ -56,6 +56,9 @@
 		870F7ABE22558D3900883348 /* HomeApplyLoanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F7ABD22558D3900883348 /* HomeApplyLoanViewController.swift */; };
 		870F7AC022558EDA00883348 /* HomeApplyLoanImgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F7ABF22558EDA00883348 /* HomeApplyLoanImgCell.swift */; };
 		870F7AC22255A0D800883348 /* HomeApplyLoanImgFootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F7AC12255A0D800883348 /* HomeApplyLoanImgFootView.swift */; };
+		87176E6622655D8700454157 /* HomeDataProveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87176E6522655D8700454157 /* HomeDataProveViewController.swift */; };
+		87176E682265610D00454157 /* HomeDataProveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87176E672265610D00454157 /* HomeDataProveCell.swift */; };
+		87176E6A2265648200454157 /* HomeDataProveSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87176E692265648200454157 /* HomeDataProveSectionView.swift */; };
 		874278B5226072E4000A1163 /* HomeAlsoMoneyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874278B4226072E4000A1163 /* HomeAlsoMoneyHeaderView.swift */; };
 		874278B722607B99000A1163 /* HomeAlsoMoneyTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874278B622607B99000A1163 /* HomeAlsoMoneyTitleCell.swift */; };
 		87592EF2224A021300FFE0A3 /* HomeLeadToProveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87592EF1224A021300FFE0A3 /* HomeLeadToProveViewController.swift */; };
@@ -64,6 +67,8 @@
 		87917148224CEC1B00AB685E /* HomeLeadToProveContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87917147224CEC1B00AB685E /* HomeLeadToProveContactCell.swift */; };
 		8795E54F224B7C0C004C5582 /* HomeLeadToProveidenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795E54E224B7C0C004C5582 /* HomeLeadToProveidenCell.swift */; };
 		8795E551224BB8FE004C5582 /* UIButton+EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795E550224BB8FE004C5582 /* UIButton+EdgeInsets.swift */; };
+		87BCD6D32264069600ACC3E0 /* HomeAlsoMoneyPsyTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BCD6D22264069600ACC3E0 /* HomeAlsoMoneyPsyTypeCell.swift */; };
+		87BCD6D52264122100ACC3E0 /* HomeAlsoMoneyFootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BCD6D42264122100ACC3E0 /* HomeAlsoMoneyFootView.swift */; };
 		87F45D35225ACE69001D3E11 /* HomeWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F45D34225ACE69001D3E11 /* HomeWebViewController.swift */; };
 		87F45D37225ADFFF001D3E11 /* HomeAlsoMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F45D36225ADFFF001D3E11 /* HomeAlsoMoneyViewController.swift */; };
 		87F45D39225AE68D001D3E11 /* HomeAlsoMoneyNaviView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F45D38225AE68D001D3E11 /* HomeAlsoMoneyNaviView.swift */; };
@@ -147,6 +152,9 @@
 		870F7ABD22558D3900883348 /* HomeApplyLoanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeApplyLoanViewController.swift; sourceTree = "<group>"; };
 		870F7ABF22558EDA00883348 /* HomeApplyLoanImgCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeApplyLoanImgCell.swift; sourceTree = "<group>"; };
 		870F7AC12255A0D800883348 /* HomeApplyLoanImgFootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeApplyLoanImgFootView.swift; sourceTree = "<group>"; };
+		87176E6522655D8700454157 /* HomeDataProveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataProveViewController.swift; sourceTree = "<group>"; };
+		87176E672265610D00454157 /* HomeDataProveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataProveCell.swift; sourceTree = "<group>"; };
+		87176E692265648200454157 /* HomeDataProveSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataProveSectionView.swift; sourceTree = "<group>"; };
 		874278B4226072E4000A1163 /* HomeAlsoMoneyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAlsoMoneyHeaderView.swift; sourceTree = "<group>"; };
 		874278B622607B99000A1163 /* HomeAlsoMoneyTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAlsoMoneyTitleCell.swift; sourceTree = "<group>"; };
 		87592EF1224A021300FFE0A3 /* HomeLeadToProveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLeadToProveViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +163,8 @@
 		87917147224CEC1B00AB685E /* HomeLeadToProveContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLeadToProveContactCell.swift; sourceTree = "<group>"; };
 		8795E54E224B7C0C004C5582 /* HomeLeadToProveidenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLeadToProveidenCell.swift; sourceTree = "<group>"; };
 		8795E550224BB8FE004C5582 /* UIButton+EdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+EdgeInsets.swift"; sourceTree = "<group>"; };
+		87BCD6D22264069600ACC3E0 /* HomeAlsoMoneyPsyTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAlsoMoneyPsyTypeCell.swift; sourceTree = "<group>"; };
+		87BCD6D42264122100ACC3E0 /* HomeAlsoMoneyFootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAlsoMoneyFootView.swift; sourceTree = "<group>"; };
 		87F45D34225ACE69001D3E11 /* HomeWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWebViewController.swift; sourceTree = "<group>"; };
 		87F45D36225ADFFF001D3E11 /* HomeAlsoMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAlsoMoneyViewController.swift; sourceTree = "<group>"; };
 		87F45D38225AE68D001D3E11 /* HomeAlsoMoneyNaviView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAlsoMoneyNaviView.swift; sourceTree = "<group>"; };
@@ -231,6 +241,10 @@
 				87F45D38225AE68D001D3E11 /* HomeAlsoMoneyNaviView.swift */,
 				874278B4226072E4000A1163 /* HomeAlsoMoneyHeaderView.swift */,
 				874278B622607B99000A1163 /* HomeAlsoMoneyTitleCell.swift */,
+				87BCD6D22264069600ACC3E0 /* HomeAlsoMoneyPsyTypeCell.swift */,
+				87BCD6D42264122100ACC3E0 /* HomeAlsoMoneyFootView.swift */,
+				87176E672265610D00454157 /* HomeDataProveCell.swift */,
+				87176E692265648200454157 /* HomeDataProveSectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -244,6 +258,7 @@
 				870F7ABD22558D3900883348 /* HomeApplyLoanViewController.swift */,
 				87F45D34225ACE69001D3E11 /* HomeWebViewController.swift */,
 				87F45D36225ADFFF001D3E11 /* HomeAlsoMoneyViewController.swift */,
+				87176E6522655D8700454157 /* HomeDataProveViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -623,12 +638,14 @@
 				870F7AC22255A0D800883348 /* HomeApplyLoanImgFootView.swift in Sources */,
 				3450361F223A601A00495854 /* HomeHeaderView.swift in Sources */,
 				3450362A223A8E0900495854 /* HomeBannerCell.swift in Sources */,
+				87BCD6D52264122100ACC3E0 /* HomeAlsoMoneyFootView.swift in Sources */,
 				87592EF4224A078500FFE0A3 /* HomeLeadToProveChooseView.swift in Sources */,
 				3450361D223A5A5C00495854 /* MineViewController.swift in Sources */,
 				3450368B223A950600495854 /* TAAbstractDotView.m in Sources */,
 				345036B7223A95DE00495854 /* UIButton+WebCache.m in Sources */,
 				3450368A223A950600495854 /* TAAnimatedDotView.m in Sources */,
 				340CE2BF223CA209003E8880 /* MineContentView.swift in Sources */,
+				87176E6A2265648200454157 /* HomeDataProveSectionView.swift in Sources */,
 				8768BF902252EFB000AFCAEE /* HomeLeadToProveBankInfoCell.swift in Sources */,
 				87F45D35225ACE69001D3E11 /* HomeWebViewController.swift in Sources */,
 				34503687223A950600495854 /* SDCollectionViewCell.m in Sources */,
@@ -648,6 +665,7 @@
 				340CE2BD223C980B003E8880 /* UICollectionView+extension.swift in Sources */,
 				34503611223A48DE00495854 /* MainNaveViewController.swift in Sources */,
 				34D38FB8223BB427007DCAC0 /* HomeTitleBannerCell.swift in Sources */,
+				87176E6622655D8700454157 /* HomeDataProveViewController.swift in Sources */,
 				34503686223A950600495854 /* UIView+SDExtension.m in Sources */,
 				34503685223A950600495854 /* SDCycleScrollView.m in Sources */,
 				87F45D39225AE68D001D3E11 /* HomeAlsoMoneyNaviView.swift in Sources */,
@@ -655,11 +673,13 @@
 				8795E54F224B7C0C004C5582 /* HomeLeadToProveidenCell.swift in Sources */,
 				3450360D223A463300495854 /* BaseViewControlle.swift in Sources */,
 				8795E551224BB8FE004C5582 /* UIButton+EdgeInsets.swift in Sources */,
+				87BCD6D32264069600ACC3E0 /* HomeAlsoMoneyPsyTypeCell.swift in Sources */,
 				87592EF2224A021300FFE0A3 /* HomeLeadToProveViewController.swift in Sources */,
 				349013FB223A3D5600958E69 /* AppDelegate.swift in Sources */,
 				340CE28D223BFBF1003E8880 /* MineHeaderView.swift in Sources */,
 				340CE2B7223C9669003E8880 /* UIImageView+extension.swift in Sources */,
 				345036AC223A95DE00495854 /* UIImageView+HighlightedWebCache.m in Sources */,
+				87176E682265610D00454157 /* HomeDataProveCell.swift in Sources */,
 				340CE2BB223C9793003E8880 /* UITableView+extension.swift in Sources */,
 				870F7ABE22558D3900883348 /* HomeApplyLoanViewController.swift in Sources */,
 				874278B5226072E4000A1163 /* HomeAlsoMoneyHeaderView.swift in Sources */,

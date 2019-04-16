@@ -20,6 +20,7 @@ extension UITableView {
     /// - Returns: tableView    
     convenience init(frame: CGRect, style:UITableView.Style, separatorStyle:CGFloat,delegate:Any?) {
         self.init(frame: frame, style: style)
+        self.backgroundColor = UIColor.white
         self.delegate = delegate as? UITableViewDelegate
         self.dataSource = delegate as? UITableViewDataSource
         self.separatorStyle = UITableViewCell.SeparatorStyle(rawValue: Int(separatorStyle))!

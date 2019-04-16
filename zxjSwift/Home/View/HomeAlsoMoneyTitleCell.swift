@@ -103,5 +103,24 @@ class HomeAlsoMoneyTitleCell: UITableViewCell {
     }()
     
     /// getset方法
+    public var index : Int? {
+        didSet{
+            if index == 0 {
+                titleLB.text = "借款日期"
+                descLB.text = "2018-09-01"
+            }else if index == 1 {
+                titleLB.text = "还款日期"
+                descLB.text = "2018-09-15"
+            }else if index == 2 {
+                titleLB.text = "逾期费用"
+                descLB.text = "0元"
+            }else if index == 3 {
+                titleLB.text = "需还金额(本息)"
+                descLB.text = "2000.00元"
+            }
+            lineV.isHidden = index != 2 ? true : false
+            descLB.textColor = index != 3 ? kRGBColorFromHex(rgbValue: 0x333333) : kRGBColorFromHex(rgbValue: 0xFF6146)
+        }
+    }
 
 }
