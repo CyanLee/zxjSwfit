@@ -59,6 +59,8 @@
 		87176E6622655D8700454157 /* HomeDataProveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87176E6522655D8700454157 /* HomeDataProveViewController.swift */; };
 		87176E682265610D00454157 /* HomeDataProveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87176E672265610D00454157 /* HomeDataProveCell.swift */; };
 		87176E6A2265648200454157 /* HomeDataProveSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87176E692265648200454157 /* HomeDataProveSectionView.swift */; };
+		872D1B8C2266AD9300EBF4AB /* HomeBorrowListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872D1B8B2266AD9300EBF4AB /* HomeBorrowListViewController.swift */; };
+		872D1B8E2266BD2300EBF4AB /* HomeBorrowListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872D1B8D2266BD2300EBF4AB /* HomeBorrowListCell.swift */; };
 		874278B5226072E4000A1163 /* HomeAlsoMoneyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874278B4226072E4000A1163 /* HomeAlsoMoneyHeaderView.swift */; };
 		874278B722607B99000A1163 /* HomeAlsoMoneyTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874278B622607B99000A1163 /* HomeAlsoMoneyTitleCell.swift */; };
 		87592EF2224A021300FFE0A3 /* HomeLeadToProveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87592EF1224A021300FFE0A3 /* HomeLeadToProveViewController.swift */; };
@@ -155,6 +157,8 @@
 		87176E6522655D8700454157 /* HomeDataProveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataProveViewController.swift; sourceTree = "<group>"; };
 		87176E672265610D00454157 /* HomeDataProveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataProveCell.swift; sourceTree = "<group>"; };
 		87176E692265648200454157 /* HomeDataProveSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataProveSectionView.swift; sourceTree = "<group>"; };
+		872D1B8B2266AD9300EBF4AB /* HomeBorrowListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBorrowListViewController.swift; sourceTree = "<group>"; };
+		872D1B8D2266BD2300EBF4AB /* HomeBorrowListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBorrowListCell.swift; sourceTree = "<group>"; };
 		874278B4226072E4000A1163 /* HomeAlsoMoneyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAlsoMoneyHeaderView.swift; sourceTree = "<group>"; };
 		874278B622607B99000A1163 /* HomeAlsoMoneyTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAlsoMoneyTitleCell.swift; sourceTree = "<group>"; };
 		87592EF1224A021300FFE0A3 /* HomeLeadToProveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLeadToProveViewController.swift; sourceTree = "<group>"; };
@@ -245,6 +249,7 @@
 				87BCD6D42264122100ACC3E0 /* HomeAlsoMoneyFootView.swift */,
 				87176E672265610D00454157 /* HomeDataProveCell.swift */,
 				87176E692265648200454157 /* HomeDataProveSectionView.swift */,
+				872D1B8D2266BD2300EBF4AB /* HomeBorrowListCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 				87F45D34225ACE69001D3E11 /* HomeWebViewController.swift */,
 				87F45D36225ADFFF001D3E11 /* HomeAlsoMoneyViewController.swift */,
 				87176E6522655D8700454157 /* HomeDataProveViewController.swift */,
+				872D1B8B2266AD9300EBF4AB /* HomeBorrowListViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -637,9 +643,11 @@
 				3450361B223A5A4400495854 /* MakeMoneyViewController.swift in Sources */,
 				870F7AC22255A0D800883348 /* HomeApplyLoanImgFootView.swift in Sources */,
 				3450361F223A601A00495854 /* HomeHeaderView.swift in Sources */,
+				872D1B8C2266AD9300EBF4AB /* HomeBorrowListViewController.swift in Sources */,
 				3450362A223A8E0900495854 /* HomeBannerCell.swift in Sources */,
 				87BCD6D52264122100ACC3E0 /* HomeAlsoMoneyFootView.swift in Sources */,
 				87592EF4224A078500FFE0A3 /* HomeLeadToProveChooseView.swift in Sources */,
+				872D1B8E2266BD2300EBF4AB /* HomeBorrowListCell.swift in Sources */,
 				3450361D223A5A5C00495854 /* MineViewController.swift in Sources */,
 				3450368B223A950600495854 /* TAAbstractDotView.m in Sources */,
 				345036B7223A95DE00495854 /* UIButton+WebCache.m in Sources */,
